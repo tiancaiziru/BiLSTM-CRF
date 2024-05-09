@@ -1,0 +1,1148 @@
+2024-04-26 13:31:20,123:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1521112368', dropout=0.5, embedding_dim=300, epoch=50, hidden_dim=300, lr=0.01, mode='train', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-26 13:31:20,123:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 13:31:20,123:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 13:31:20,261:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 13:31:20,261:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 13:31:20,344:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 13:31:20,344:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 13:31:20,374:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 13:31:20,374:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 13:31:20,375:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 13:31:20,375:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 13:31:20,375:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 13:31:20,375:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 13:31:20,643:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 13:31:20,643:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 13:31:20,660:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 13:31:20,660:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 13:31:20,713:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000014758594AC8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000014758594AC8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 13:31:20,713:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000014758594AC8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000014758594AC8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 13:31:20,724:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 13:31:20,724:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 13:31:20,909:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001475868E160>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001475868E160>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 13:31:20,909:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001475868E160>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001475868E160>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 13:31:20,985:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-26 13:31:20,985:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-26 13:31:21,254:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 13:31:21,254:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 13:31:21,258:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 13:31:21,258:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 13:31:22,734:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 13:31:22,734:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 13:31:23,429:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:147: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2024-04-26 13:31:23,429:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:147: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2024-04-26 13:31:23,430:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:148: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2024-04-26 13:31:23,430:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:148: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2024-04-26 13:31:33,687:INFO: 2024-04-26 13:31:26 epoch 1, step 1, loss: 153.0, global_step: 1
+2024-04-26 13:31:33,687:INFO: 2024-04-26 13:31:26 epoch 1, step 1, loss: 153.0, global_step: 1
+2024-04-26 13:33:45,588:INFO: 2024-04-26 13:31:26 epoch 1, step 39, loss: 21.32, global_step: 39
+2024-04-26 13:33:45,588:INFO: 2024-04-26 13:31:26 epoch 1, step 39, loss: 21.32, global_step: 39
+2024-04-26 13:33:47,997:INFO: ===========validation / test===========
+2024-04-26 13:33:47,997:INFO: ===========validation / test===========
+2024-04-26 13:33:54,325:INFO: processed 35226 tokens with 2425 phrases; found: 1912 phrases; correct: 919.
+2024-04-26 13:33:54,325:INFO: processed 35226 tokens with 2425 phrases; found: 1912 phrases; correct: 919.
+2024-04-26 13:33:54,325:INFO: accuracy:  92.42%; precision:  48.06%; recall:  37.90%; FB1:  42.38
+2024-04-26 13:33:54,325:INFO: accuracy:  92.42%; precision:  48.06%; recall:  37.90%; FB1:  42.38
+2024-04-26 13:33:54,325:INFO: : precision:  40.79%; recall:  31.45%; FB1:  35.51  912
+2024-04-26 13:33:54,325:INFO: : precision:  40.79%; recall:  31.45%; FB1:  35.51  912
+2024-04-26 13:33:54,325:INFO: : precision:  40.79%; recall:  31.45%; FB1:  35.51  912
+2024-04-26 13:33:54,325:INFO: : precision:  40.79%; recall:  31.45%; FB1:  35.51  912
+2024-04-26 13:33:54,327:INFO: 产品: precision:  54.70%; recall:  44.04%; FB1:  48.80  1000
+2024-04-26 13:33:54,327:INFO: 产品: precision:  54.70%; recall:  44.04%; FB1:  48.80  1000
+2024-04-26 13:33:58,054:INFO: 2024-04-26 13:33:54 epoch 2, step 1, loss: 12.53, global_step: 40
+2024-04-26 13:33:58,054:INFO: 2024-04-26 13:33:54 epoch 2, step 1, loss: 12.53, global_step: 40
+2024-04-26 13:36:13,898:INFO: 2024-04-26 13:33:54 epoch 2, step 39, loss: 10.5, global_step: 78
+2024-04-26 13:36:13,898:INFO: 2024-04-26 13:33:54 epoch 2, step 39, loss: 10.5, global_step: 78
+2024-04-26 13:36:15,865:INFO: ===========validation / test===========
+2024-04-26 13:36:15,865:INFO: ===========validation / test===========
+2024-04-26 13:36:21,683:INFO: processed 35226 tokens with 2425 phrases; found: 1848 phrases; correct: 1168.
+2024-04-26 13:36:21,683:INFO: processed 35226 tokens with 2425 phrases; found: 1848 phrases; correct: 1168.
+2024-04-26 13:36:21,683:INFO: accuracy:  93.66%; precision:  63.20%; recall:  48.16%; FB1:  54.67
+2024-04-26 13:36:21,683:INFO: accuracy:  93.66%; precision:  63.20%; recall:  48.16%; FB1:  54.67
+2024-04-26 13:36:21,683:INFO: : precision:  48.99%; recall:  37.02%; FB1:  42.18  894
+2024-04-26 13:36:21,683:INFO: : precision:  48.99%; recall:  37.02%; FB1:  42.18  894
+2024-04-26 13:36:21,683:INFO: : precision:  48.99%; recall:  37.02%; FB1:  42.18  894
+2024-04-26 13:36:21,683:INFO: : precision:  48.99%; recall:  37.02%; FB1:  42.18  894
+2024-04-26 13:36:21,683:INFO: 产品: precision:  76.52%; recall:  58.78%; FB1:  66.48  954
+2024-04-26 13:36:21,683:INFO: 产品: precision:  76.52%; recall:  58.78%; FB1:  66.48  954
+2024-04-26 13:36:25,768:INFO: 2024-04-26 13:36:21 epoch 3, step 1, loss: 11.26, global_step: 79
+2024-04-26 13:36:25,768:INFO: 2024-04-26 13:36:21 epoch 3, step 1, loss: 11.26, global_step: 79
+2024-04-26 13:38:38,909:INFO: 2024-04-26 13:36:21 epoch 3, step 39, loss: 8.712, global_step: 117
+2024-04-26 13:38:38,909:INFO: 2024-04-26 13:36:21 epoch 3, step 39, loss: 8.712, global_step: 117
+2024-04-26 13:38:40,814:INFO: ===========validation / test===========
+2024-04-26 13:38:40,814:INFO: ===========validation / test===========
+2024-04-26 13:38:46,272:INFO: processed 35226 tokens with 2425 phrases; found: 1926 phrases; correct: 1274.
+2024-04-26 13:38:46,272:INFO: processed 35226 tokens with 2425 phrases; found: 1926 phrases; correct: 1274.
+2024-04-26 13:38:46,272:INFO: accuracy:  94.15%; precision:  66.15%; recall:  52.54%; FB1:  58.56
+2024-04-26 13:38:46,272:INFO: accuracy:  94.15%; precision:  66.15%; recall:  52.54%; FB1:  58.56
+2024-04-26 13:38:46,272:INFO: : precision:  53.27%; recall:  42.01%; FB1:  46.98  933
+2024-04-26 13:38:46,272:INFO: : precision:  53.27%; recall:  42.01%; FB1:  46.98  933
+2024-04-26 13:38:46,272:INFO: : precision:  53.27%; recall:  42.01%; FB1:  46.98  933
+2024-04-26 13:38:46,272:INFO: : precision:  53.27%; recall:  42.01%; FB1:  46.98  933
+2024-04-26 13:38:46,272:INFO: 产品: precision:  78.25%; recall:  62.56%; FB1:  69.53  993
+2024-04-26 13:38:46,272:INFO: 产品: precision:  78.25%; recall:  62.56%; FB1:  69.53  993
+2024-04-26 13:38:48,566:INFO: 2024-04-26 13:38:46 epoch 4, step 1, loss: 7.945, global_step: 118
+2024-04-26 13:38:48,566:INFO: 2024-04-26 13:38:46 epoch 4, step 1, loss: 7.945, global_step: 118
+2024-04-26 13:41:06,097:INFO: 2024-04-26 13:38:46 epoch 4, step 39, loss: 6.658, global_step: 156
+2024-04-26 13:41:06,097:INFO: 2024-04-26 13:38:46 epoch 4, step 39, loss: 6.658, global_step: 156
+2024-04-26 13:41:08,203:INFO: ===========validation / test===========
+2024-04-26 13:41:08,203:INFO: ===========validation / test===========
+2024-04-26 13:41:13,459:INFO: processed 35226 tokens with 2425 phrases; found: 1696 phrases; correct: 1170.
+2024-04-26 13:41:13,459:INFO: processed 35226 tokens with 2425 phrases; found: 1696 phrases; correct: 1170.
+2024-04-26 13:41:13,459:INFO: accuracy:  93.87%; precision:  68.99%; recall:  48.25%; FB1:  56.78
+2024-04-26 13:41:13,459:INFO: accuracy:  93.87%; precision:  68.99%; recall:  48.25%; FB1:  56.78
+2024-04-26 13:41:13,459:INFO: : precision:  53.54%; recall:  37.11%; FB1:  43.83  820
+2024-04-26 13:41:13,459:INFO: : precision:  53.54%; recall:  37.11%; FB1:  43.83  820
+2024-04-26 13:41:13,460:INFO: : precision:  53.54%; recall:  37.11%; FB1:  43.83  820
+2024-04-26 13:41:13,460:INFO: : precision:  53.54%; recall:  37.11%; FB1:  43.83  820
+2024-04-26 13:41:13,460:INFO: 产品: precision:  83.45%; recall:  58.86%; FB1:  69.03  876
+2024-04-26 13:41:13,460:INFO: 产品: precision:  83.45%; recall:  58.86%; FB1:  69.03  876
+2024-04-26 13:41:21,668:INFO: 2024-04-26 13:41:13 epoch 5, step 1, loss: 7.463, global_step: 157
+2024-04-26 13:41:21,668:INFO: 2024-04-26 13:41:13 epoch 5, step 1, loss: 7.463, global_step: 157
+2024-04-26 13:43:29,969:INFO: 2024-04-26 13:41:13 epoch 5, step 39, loss: 6.784, global_step: 195
+2024-04-26 13:43:29,969:INFO: 2024-04-26 13:41:13 epoch 5, step 39, loss: 6.784, global_step: 195
+2024-04-26 13:43:32,063:INFO: ===========validation / test===========
+2024-04-26 13:43:32,063:INFO: ===========validation / test===========
+2024-04-26 13:43:37,365:INFO: processed 35226 tokens with 2425 phrases; found: 2143 phrases; correct: 1469.
+2024-04-26 13:43:37,365:INFO: processed 35226 tokens with 2425 phrases; found: 2143 phrases; correct: 1469.
+2024-04-26 13:43:37,365:INFO: accuracy:  94.88%; precision:  68.55%; recall:  60.58%; FB1:  64.32
+2024-04-26 13:43:37,365:INFO: accuracy:  94.88%; precision:  68.55%; recall:  60.58%; FB1:  64.32
+2024-04-26 13:43:37,365:INFO: : precision:  57.10%; recall:  50.30%; FB1:  53.48  1042
+2024-04-26 13:43:37,365:INFO: : precision:  57.10%; recall:  50.30%; FB1:  53.48  1042
+2024-04-26 13:43:37,365:INFO: : precision:  57.10%; recall:  50.30%; FB1:  53.48  1042
+2024-04-26 13:43:37,365:INFO: : precision:  57.10%; recall:  50.30%; FB1:  53.48  1042
+2024-04-26 13:43:37,366:INFO: 产品: precision:  79.38%; recall:  70.37%; FB1:  74.61  1101
+2024-04-26 13:43:37,366:INFO: 产品: precision:  79.38%; recall:  70.37%; FB1:  74.61  1101
+2024-04-26 13:43:40,287:INFO: 2024-04-26 13:43:37 epoch 6, step 1, loss: 5.026, global_step: 196
+2024-04-26 13:43:40,287:INFO: 2024-04-26 13:43:37 epoch 6, step 1, loss: 5.026, global_step: 196
+2024-04-26 13:45:57,503:INFO: 2024-04-26 13:43:37 epoch 6, step 39, loss: 6.007, global_step: 234
+2024-04-26 13:45:57,503:INFO: 2024-04-26 13:43:37 epoch 6, step 39, loss: 6.007, global_step: 234
+2024-04-26 13:45:57,856:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2024-04-26 13:45:57,856:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2024-04-26 13:45:59,753:INFO: ===========validation / test===========
+2024-04-26 13:45:59,753:INFO: ===========validation / test===========
+2024-04-26 13:46:05,294:INFO: processed 35226 tokens with 2425 phrases; found: 2350 phrases; correct: 1581.
+2024-04-26 13:46:05,294:INFO: processed 35226 tokens with 2425 phrases; found: 2350 phrases; correct: 1581.
+2024-04-26 13:46:05,294:INFO: accuracy:  95.07%; precision:  67.28%; recall:  65.20%; FB1:  66.22
+2024-04-26 13:46:05,294:INFO: accuracy:  95.07%; precision:  67.28%; recall:  65.20%; FB1:  66.22
+2024-04-26 13:46:05,294:INFO: : precision:  58.00%; recall:  55.79%; FB1:  56.87  1138
+2024-04-26 13:46:05,294:INFO: : precision:  58.00%; recall:  55.79%; FB1:  56.87  1138
+2024-04-26 13:46:05,294:INFO: : precision:  58.00%; recall:  55.79%; FB1:  56.87  1138
+2024-04-26 13:46:05,294:INFO: : precision:  58.00%; recall:  55.79%; FB1:  56.87  1138
+2024-04-26 13:46:05,294:INFO: 产品: precision:  75.99%; recall:  74.15%; FB1:  75.06  1212
+2024-04-26 13:46:05,294:INFO: 产品: precision:  75.99%; recall:  74.15%; FB1:  75.06  1212
+2024-04-26 13:46:09,009:INFO: 2024-04-26 13:46:05 epoch 7, step 1, loss: 3.962, global_step: 235
+2024-04-26 13:46:09,009:INFO: 2024-04-26 13:46:05 epoch 7, step 1, loss: 3.962, global_step: 235
+2024-04-26 13:48:28,145:INFO: 2024-04-26 13:46:05 epoch 7, step 39, loss: 2.503, global_step: 273
+2024-04-26 13:48:28,145:INFO: 2024-04-26 13:46:05 epoch 7, step 39, loss: 2.503, global_step: 273
+2024-04-26 13:48:30,702:INFO: ===========validation / test===========
+2024-04-26 13:48:30,702:INFO: ===========validation / test===========
+2024-04-26 13:48:36,181:INFO: processed 35226 tokens with 2425 phrases; found: 2355 phrases; correct: 1591.
+2024-04-26 13:48:36,181:INFO: processed 35226 tokens with 2425 phrases; found: 2355 phrases; correct: 1591.
+2024-04-26 13:48:36,181:INFO: accuracy:  95.05%; precision:  67.56%; recall:  65.61%; FB1:  66.57
+2024-04-26 13:48:36,181:INFO: accuracy:  95.05%; precision:  67.56%; recall:  65.61%; FB1:  66.57
+2024-04-26 13:48:36,181:INFO: : precision:  57.83%; recall:  55.87%; FB1:  56.84  1143
+2024-04-26 13:48:36,181:INFO: : precision:  57.83%; recall:  55.87%; FB1:  56.84  1143
+2024-04-26 13:48:36,182:INFO: : precision:  57.83%; recall:  55.87%; FB1:  56.84  1143
+2024-04-26 13:48:36,182:INFO: : precision:  57.83%; recall:  55.87%; FB1:  56.84  1143
+2024-04-26 13:48:36,182:INFO: 产品: precision:  76.73%; recall:  74.88%; FB1:  75.79  1212
+2024-04-26 13:48:36,182:INFO: 产品: precision:  76.73%; recall:  74.88%; FB1:  75.79  1212
+2024-04-26 13:48:39,593:INFO: 2024-04-26 13:48:36 epoch 8, step 1, loss: 5.178, global_step: 274
+2024-04-26 13:48:39,593:INFO: 2024-04-26 13:48:36 epoch 8, step 1, loss: 5.178, global_step: 274
+2024-04-26 13:50:51,654:INFO: 2024-04-26 13:48:36 epoch 8, step 39, loss: 2.846, global_step: 312
+2024-04-26 13:50:51,654:INFO: 2024-04-26 13:48:36 epoch 8, step 39, loss: 2.846, global_step: 312
+2024-04-26 13:50:54,020:INFO: ===========validation / test===========
+2024-04-26 13:50:54,020:INFO: ===========validation / test===========
+2024-04-26 13:50:59,433:INFO: processed 35226 tokens with 2425 phrases; found: 2220 phrases; correct: 1553.
+2024-04-26 13:50:59,433:INFO: processed 35226 tokens with 2425 phrases; found: 2220 phrases; correct: 1553.
+2024-04-26 13:50:59,433:INFO: accuracy:  95.28%; precision:  69.95%; recall:  64.04%; FB1:  66.87
+2024-04-26 13:50:59,433:INFO: accuracy:  95.28%; precision:  69.95%; recall:  64.04%; FB1:  66.87
+2024-04-26 13:50:59,433:INFO: : precision:  59.57%; recall:  54.44%; FB1:  56.89  1081
+2024-04-26 13:50:59,433:INFO: : precision:  59.57%; recall:  54.44%; FB1:  56.89  1081
+2024-04-26 13:50:59,433:INFO: : precision:  59.57%; recall:  54.44%; FB1:  56.89  1081
+2024-04-26 13:50:59,433:INFO: : precision:  59.57%; recall:  54.44%; FB1:  56.89  1081
+2024-04-26 13:50:59,433:INFO: 产品: precision:  79.81%; recall:  73.19%; FB1:  76.35  1139
+2024-04-26 13:50:59,433:INFO: 产品: precision:  79.81%; recall:  73.19%; FB1:  76.35  1139
+2024-04-26 13:51:07,489:INFO: 2024-04-26 13:50:59 epoch 9, step 1, loss: 3.985, global_step: 313
+2024-04-26 13:51:07,489:INFO: 2024-04-26 13:50:59 epoch 9, step 1, loss: 3.985, global_step: 313
+2024-04-26 13:53:14,912:INFO: 2024-04-26 13:50:59 epoch 9, step 39, loss: 2.957, global_step: 351
+2024-04-26 13:53:14,912:INFO: 2024-04-26 13:50:59 epoch 9, step 39, loss: 2.957, global_step: 351
+2024-04-26 13:53:18,467:INFO: ===========validation / test===========
+2024-04-26 13:53:18,467:INFO: ===========validation / test===========
+2024-04-26 13:53:23,805:INFO: processed 35226 tokens with 2425 phrases; found: 2343 phrases; correct: 1612.
+2024-04-26 13:53:23,805:INFO: processed 35226 tokens with 2425 phrases; found: 2343 phrases; correct: 1612.
+2024-04-26 13:53:23,805:INFO: accuracy:  95.29%; precision:  68.80%; recall:  66.47%; FB1:  67.62
+2024-04-26 13:53:23,805:INFO: accuracy:  95.29%; precision:  68.80%; recall:  66.47%; FB1:  67.62
+2024-04-26 13:53:23,805:INFO: : precision:  58.96%; recall:  56.72%; FB1:  57.82  1138
+2024-04-26 13:53:23,805:INFO: : precision:  58.96%; recall:  56.72%; FB1:  57.82  1138
+2024-04-26 13:53:23,805:INFO: : precision:  58.96%; recall:  56.72%; FB1:  57.82  1138
+2024-04-26 13:53:23,805:INFO: : precision:  58.96%; recall:  56.72%; FB1:  57.82  1138
+2024-04-26 13:53:23,805:INFO: 产品: precision:  78.09%; recall:  75.76%; FB1:  76.91  1205
+2024-04-26 13:53:23,805:INFO: 产品: precision:  78.09%; recall:  75.76%; FB1:  76.91  1205
+2024-04-26 13:53:26,354:INFO: 2024-04-26 13:53:23 epoch 10, step 1, loss: 3.774, global_step: 352
+2024-04-26 13:53:26,354:INFO: 2024-04-26 13:53:23 epoch 10, step 1, loss: 3.774, global_step: 352
+2024-04-26 13:55:50,239:INFO: 2024-04-26 13:53:23 epoch 10, step 39, loss: 3.96, global_step: 390
+2024-04-26 13:55:50,239:INFO: 2024-04-26 13:53:23 epoch 10, step 39, loss: 3.96, global_step: 390
+2024-04-26 13:55:52,628:INFO: ===========validation / test===========
+2024-04-26 13:55:52,628:INFO: ===========validation / test===========
+2024-04-26 13:55:58,102:INFO: processed 35226 tokens with 2425 phrases; found: 1833 phrases; correct: 1260.
+2024-04-26 13:55:58,102:INFO: processed 35226 tokens with 2425 phrases; found: 1833 phrases; correct: 1260.
+2024-04-26 13:55:58,102:INFO: accuracy:  94.40%; precision:  68.74%; recall:  51.96%; FB1:  59.18
+2024-04-26 13:55:58,102:INFO: accuracy:  94.40%; precision:  68.74%; recall:  51.96%; FB1:  59.18
+2024-04-26 13:55:58,103:INFO: : precision:  54.80%; recall:  41.50%; FB1:  47.23  896
+2024-04-26 13:55:58,103:INFO: : precision:  54.80%; recall:  41.50%; FB1:  47.23  896
+2024-04-26 13:55:58,103:INFO: : precision:  54.80%; recall:  41.50%; FB1:  47.23  896
+2024-04-26 13:55:58,103:INFO: : precision:  54.80%; recall:  41.50%; FB1:  47.23  896
+2024-04-26 13:55:58,103:INFO: 产品: precision:  82.07%; recall:  61.92%; FB1:  70.58  937
+2024-04-26 13:55:58,103:INFO: 产品: precision:  82.07%; recall:  61.92%; FB1:  70.58  937
+2024-04-26 13:56:01,678:INFO: 2024-04-26 13:55:58 epoch 11, step 1, loss: 4.944, global_step: 391
+2024-04-26 13:56:01,678:INFO: 2024-04-26 13:55:58 epoch 11, step 1, loss: 4.944, global_step: 391
+2024-04-26 13:58:19,111:INFO: 2024-04-26 13:55:58 epoch 11, step 39, loss: 3.251, global_step: 429
+2024-04-26 13:58:19,111:INFO: 2024-04-26 13:55:58 epoch 11, step 39, loss: 3.251, global_step: 429
+2024-04-26 13:58:21,464:INFO: ===========validation / test===========
+2024-04-26 13:58:21,464:INFO: ===========validation / test===========
+2024-04-26 13:58:26,867:INFO: processed 35226 tokens with 2425 phrases; found: 2697 phrases; correct: 1882.
+2024-04-26 13:58:26,867:INFO: processed 35226 tokens with 2425 phrases; found: 2697 phrases; correct: 1882.
+2024-04-26 13:58:26,867:INFO: accuracy:  95.67%; precision:  69.78%; recall:  77.61%; FB1:  73.49
+2024-04-26 13:58:26,867:INFO: accuracy:  95.67%; precision:  69.78%; recall:  77.61%; FB1:  73.49
+2024-04-26 13:58:26,867:INFO: : precision:  63.98%; recall:  71.01%; FB1:  67.31  1313
+2024-04-26 13:58:26,867:INFO: : precision:  63.98%; recall:  71.01%; FB1:  67.31  1313
+2024-04-26 13:58:26,867:INFO: : precision:  63.98%; recall:  71.01%; FB1:  67.31  1313
+2024-04-26 13:58:26,867:INFO: : precision:  63.98%; recall:  71.01%; FB1:  67.31  1313
+2024-04-26 13:58:26,867:INFO: 产品: precision:  75.29%; recall:  83.90%; FB1:  79.36  1384
+2024-04-26 13:58:26,867:INFO: 产品: precision:  75.29%; recall:  83.90%; FB1:  79.36  1384
+2024-04-26 13:58:29,562:INFO: 2024-04-26 13:58:26 epoch 12, step 1, loss: 3.875, global_step: 430
+2024-04-26 13:58:29,562:INFO: 2024-04-26 13:58:26 epoch 12, step 1, loss: 3.875, global_step: 430
+2024-04-26 14:00:52,050:INFO: 2024-04-26 13:58:26 epoch 12, step 39, loss: 2.975, global_step: 468
+2024-04-26 14:00:52,050:INFO: 2024-04-26 13:58:26 epoch 12, step 39, loss: 2.975, global_step: 468
+2024-04-26 14:00:54,726:INFO: ===========validation / test===========
+2024-04-26 14:00:54,726:INFO: ===========validation / test===========
+2024-04-26 14:01:00,131:INFO: processed 35226 tokens with 2425 phrases; found: 2660 phrases; correct: 1887.
+2024-04-26 14:01:00,131:INFO: processed 35226 tokens with 2425 phrases; found: 2660 phrases; correct: 1887.
+2024-04-26 14:01:00,131:INFO: accuracy:  95.77%; precision:  70.94%; recall:  77.81%; FB1:  74.22
+2024-04-26 14:01:00,131:INFO: accuracy:  95.77%; precision:  70.94%; recall:  77.81%; FB1:  74.22
+2024-04-26 14:01:00,131:INFO: : precision:  64.99%; recall:  71.09%; FB1:  67.90  1294
+2024-04-26 14:01:00,131:INFO: : precision:  64.99%; recall:  71.09%; FB1:  67.90  1294
+2024-04-26 14:01:00,131:INFO: : precision:  64.99%; recall:  71.09%; FB1:  67.90  1294
+2024-04-26 14:01:00,131:INFO: : precision:  64.99%; recall:  71.09%; FB1:  67.90  1294
+2024-04-26 14:01:00,132:INFO: 产品: precision:  76.57%; recall:  84.22%; FB1:  80.21  1366
+2024-04-26 14:01:00,132:INFO: 产品: precision:  76.57%; recall:  84.22%; FB1:  80.21  1366
+2024-04-26 14:01:08,620:INFO: 2024-04-26 14:01:00 epoch 13, step 1, loss: 7.581, global_step: 469
+2024-04-26 14:01:08,620:INFO: 2024-04-26 14:01:00 epoch 13, step 1, loss: 7.581, global_step: 469
+2024-04-26 14:03:29,302:INFO: 2024-04-26 14:01:00 epoch 13, step 39, loss: 2.217, global_step: 507
+2024-04-26 14:03:29,302:INFO: 2024-04-26 14:01:00 epoch 13, step 39, loss: 2.217, global_step: 507
+2024-04-26 14:03:31,661:INFO: ===========validation / test===========
+2024-04-26 14:03:31,661:INFO: ===========validation / test===========
+2024-04-26 14:03:37,253:INFO: processed 35226 tokens with 2425 phrases; found: 2382 phrases; correct: 1662.
+2024-04-26 14:03:37,253:INFO: processed 35226 tokens with 2425 phrases; found: 2382 phrases; correct: 1662.
+2024-04-26 14:03:37,253:INFO: accuracy:  95.42%; precision:  69.77%; recall:  68.54%; FB1:  69.15
+2024-04-26 14:03:37,253:INFO: accuracy:  95.42%; precision:  69.77%; recall:  68.54%; FB1:  69.15
+2024-04-26 14:03:37,253:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:03:37,253:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:03:37,253:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:03:37,253:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:03:37,253:INFO: 产品: precision:  78.19%; recall:  77.05%; FB1:  77.62  1224
+2024-04-26 14:03:37,253:INFO: 产品: precision:  78.19%; recall:  77.05%; FB1:  77.62  1224
+2024-04-26 14:03:40,148:INFO: 2024-04-26 14:03:37 epoch 14, step 1, loss: 3.132, global_step: 508
+2024-04-26 14:03:40,148:INFO: 2024-04-26 14:03:37 epoch 14, step 1, loss: 3.132, global_step: 508
+2024-04-26 14:06:04,529:INFO: 2024-04-26 14:03:37 epoch 14, step 39, loss: 2.637, global_step: 546
+2024-04-26 14:06:04,529:INFO: 2024-04-26 14:03:37 epoch 14, step 39, loss: 2.637, global_step: 546
+2024-04-26 14:06:06,298:INFO: ===========validation / test===========
+2024-04-26 14:06:06,298:INFO: ===========validation / test===========
+2024-04-26 14:06:11,719:INFO: processed 35226 tokens with 2425 phrases; found: 2381 phrases; correct: 1661.
+2024-04-26 14:06:11,719:INFO: processed 35226 tokens with 2425 phrases; found: 2381 phrases; correct: 1661.
+2024-04-26 14:06:11,719:INFO: accuracy:  95.40%; precision:  69.76%; recall:  68.49%; FB1:  69.12
+2024-04-26 14:06:11,719:INFO: accuracy:  95.40%; precision:  69.76%; recall:  68.49%; FB1:  69.12
+2024-04-26 14:06:11,719:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:06:11,719:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:06:11,719:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:06:11,719:INFO: : precision:  60.88%; recall:  59.59%; FB1:  60.23  1158
+2024-04-26 14:06:11,719:INFO: 产品: precision:  78.17%; recall:  76.97%; FB1:  77.57  1223
+2024-04-26 14:06:11,719:INFO: 产品: precision:  78.17%; recall:  76.97%; FB1:  77.57  1223
+2024-04-26 14:06:15,873:INFO: 2024-04-26 14:06:11 epoch 15, step 1, loss: 3.338, global_step: 547
+2024-04-26 14:06:15,873:INFO: 2024-04-26 14:06:11 epoch 15, step 1, loss: 3.338, global_step: 547
+2024-04-26 14:08:46,907:INFO: 2024-04-26 14:06:11 epoch 15, step 39, loss: 4.335, global_step: 585
+2024-04-26 14:08:46,907:INFO: 2024-04-26 14:06:11 epoch 15, step 39, loss: 4.335, global_step: 585
+2024-04-26 14:08:49,183:INFO: ===========validation / test===========
+2024-04-26 14:08:49,183:INFO: ===========validation / test===========
+2024-04-26 14:08:55,255:INFO: processed 35226 tokens with 2425 phrases; found: 1876 phrases; correct: 1317.
+2024-04-26 14:08:55,255:INFO: processed 35226 tokens with 2425 phrases; found: 1876 phrases; correct: 1317.
+2024-04-26 14:08:55,255:INFO: accuracy:  94.56%; precision:  70.20%; recall:  54.31%; FB1:  61.24
+2024-04-26 14:08:55,255:INFO: accuracy:  94.56%; precision:  70.20%; recall:  54.31%; FB1:  61.24
+2024-04-26 14:08:55,255:INFO: : precision:  56.88%; recall:  43.70%; FB1:  49.43  909
+2024-04-26 14:08:55,255:INFO: : precision:  56.88%; recall:  43.70%; FB1:  49.43  909
+2024-04-26 14:08:55,255:INFO: : precision:  56.88%; recall:  43.70%; FB1:  49.43  909
+2024-04-26 14:08:55,255:INFO: : precision:  56.88%; recall:  43.70%; FB1:  49.43  909
+2024-04-26 14:08:55,255:INFO: 产品: precision:  82.73%; recall:  64.41%; FB1:  72.43  967
+2024-04-26 14:08:55,255:INFO: 产品: precision:  82.73%; recall:  64.41%; FB1:  72.43  967
+2024-04-26 14:08:58,278:INFO: 2024-04-26 14:08:55 epoch 16, step 1, loss: 3.334, global_step: 586
+2024-04-26 14:08:58,278:INFO: 2024-04-26 14:08:55 epoch 16, step 1, loss: 3.334, global_step: 586
+2024-04-26 14:11:30,699:INFO: 2024-04-26 14:08:55 epoch 16, step 39, loss: 3.137, global_step: 624
+2024-04-26 14:11:30,699:INFO: 2024-04-26 14:08:55 epoch 16, step 39, loss: 3.137, global_step: 624
+2024-04-26 14:11:33,476:INFO: ===========validation / test===========
+2024-04-26 14:11:33,476:INFO: ===========validation / test===========
+2024-04-26 14:11:39,349:INFO: processed 35226 tokens with 2425 phrases; found: 2401 phrases; correct: 1696.
+2024-04-26 14:11:39,349:INFO: processed 35226 tokens with 2425 phrases; found: 2401 phrases; correct: 1696.
+2024-04-26 14:11:39,350:INFO: accuracy:  95.58%; precision:  70.64%; recall:  69.94%; FB1:  70.29
+2024-04-26 14:11:39,350:INFO: accuracy:  95.58%; precision:  70.64%; recall:  69.94%; FB1:  70.29
+2024-04-26 14:11:39,350:INFO: : precision:  61.71%; recall:  61.03%; FB1:  61.37  1170
+2024-04-26 14:11:39,350:INFO: : precision:  61.71%; recall:  61.03%; FB1:  61.37  1170
+2024-04-26 14:11:39,350:INFO: : precision:  61.71%; recall:  61.03%; FB1:  61.37  1170
+2024-04-26 14:11:39,350:INFO: : precision:  61.71%; recall:  61.03%; FB1:  61.37  1170
+2024-04-26 14:11:39,350:INFO: 产品: precision:  79.12%; recall:  78.42%; FB1:  78.77  1231
+2024-04-26 14:11:39,350:INFO: 产品: precision:  79.12%; recall:  78.42%; FB1:  78.77  1231
+2024-04-26 14:11:41,271:INFO: 2024-04-26 14:11:39 epoch 17, step 1, loss: 2.612, global_step: 625
+2024-04-26 14:11:41,271:INFO: 2024-04-26 14:11:39 epoch 17, step 1, loss: 2.612, global_step: 625
+2024-04-26 14:14:08,872:INFO: 2024-04-26 14:11:39 epoch 17, step 39, loss: 3.489, global_step: 663
+2024-04-26 14:14:08,872:INFO: 2024-04-26 14:11:39 epoch 17, step 39, loss: 3.489, global_step: 663
+2024-04-26 14:14:11,424:INFO: ===========validation / test===========
+2024-04-26 14:14:11,424:INFO: ===========validation / test===========
+2024-04-26 14:14:17,092:INFO: processed 35226 tokens with 2425 phrases; found: 2345 phrases; correct: 1640.
+2024-04-26 14:14:17,092:INFO: processed 35226 tokens with 2425 phrases; found: 2345 phrases; correct: 1640.
+2024-04-26 14:14:17,092:INFO: accuracy:  95.43%; precision:  69.94%; recall:  67.63%; FB1:  68.76
+2024-04-26 14:14:17,092:INFO: accuracy:  95.43%; precision:  69.94%; recall:  67.63%; FB1:  68.76
+2024-04-26 14:14:17,093:INFO: : precision:  60.77%; recall:  58.66%; FB1:  59.70  1142
+2024-04-26 14:14:17,093:INFO: : precision:  60.77%; recall:  58.66%; FB1:  59.70  1142
+2024-04-26 14:14:17,093:INFO: : precision:  60.77%; recall:  58.66%; FB1:  59.70  1142
+2024-04-26 14:14:17,093:INFO: : precision:  60.77%; recall:  58.66%; FB1:  59.70  1142
+2024-04-26 14:14:17,093:INFO: 产品: precision:  78.64%; recall:  76.17%; FB1:  77.38  1203
+2024-04-26 14:14:17,093:INFO: 产品: precision:  78.64%; recall:  76.17%; FB1:  77.38  1203
+2024-04-26 14:14:25,435:INFO: 2024-04-26 14:14:17 epoch 18, step 1, loss: 2.967, global_step: 664
+2024-04-26 14:14:25,435:INFO: 2024-04-26 14:14:17 epoch 18, step 1, loss: 2.967, global_step: 664
+2024-04-26 14:16:51,475:INFO: 2024-04-26 14:14:17 epoch 18, step 39, loss: 2.524, global_step: 702
+2024-04-26 14:16:51,475:INFO: 2024-04-26 14:14:17 epoch 18, step 39, loss: 2.524, global_step: 702
+2024-04-26 14:16:53,915:INFO: ===========validation / test===========
+2024-04-26 14:16:53,915:INFO: ===========validation / test===========
+2024-04-26 14:16:59,710:INFO: processed 35226 tokens with 2425 phrases; found: 2029 phrases; correct: 1440.
+2024-04-26 14:16:59,710:INFO: processed 35226 tokens with 2425 phrases; found: 2029 phrases; correct: 1440.
+2024-04-26 14:16:59,710:INFO: accuracy:  95.34%; precision:  70.97%; recall:  59.38%; FB1:  64.66
+2024-04-26 14:16:59,710:INFO: accuracy:  95.34%; precision:  70.97%; recall:  59.38%; FB1:  64.66
+2024-04-26 14:16:59,710:INFO: : precision:  58.97%; recall:  49.45%; FB1:  53.79  992
+2024-04-26 14:16:59,710:INFO: : precision:  58.97%; recall:  49.45%; FB1:  53.79  992
+2024-04-26 14:16:59,710:INFO: : precision:  58.97%; recall:  49.45%; FB1:  53.79  992
+2024-04-26 14:16:59,710:INFO: : precision:  58.97%; recall:  49.45%; FB1:  53.79  992
+2024-04-26 14:16:59,710:INFO: 产品: precision:  82.45%; recall:  68.84%; FB1:  75.03  1037
+2024-04-26 14:16:59,710:INFO: 产品: precision:  82.45%; recall:  68.84%; FB1:  75.03  1037
+2024-04-26 14:17:02,529:INFO: 2024-04-26 14:16:59 epoch 19, step 1, loss: 3.155, global_step: 703
+2024-04-26 14:17:02,529:INFO: 2024-04-26 14:16:59 epoch 19, step 1, loss: 3.155, global_step: 703
+2024-04-26 14:19:30,121:INFO: 2024-04-26 14:16:59 epoch 19, step 39, loss: 1.913, global_step: 741
+2024-04-26 14:19:30,121:INFO: 2024-04-26 14:16:59 epoch 19, step 39, loss: 1.913, global_step: 741
+2024-04-26 14:19:33,770:INFO: ===========validation / test===========
+2024-04-26 14:19:33,770:INFO: ===========validation / test===========
+2024-04-26 14:19:43,496:INFO: processed 35226 tokens with 2425 phrases; found: 2191 phrases; correct: 1497.
+2024-04-26 14:19:43,496:INFO: processed 35226 tokens with 2425 phrases; found: 2191 phrases; correct: 1497.
+2024-04-26 14:19:43,496:INFO: accuracy:  95.42%; precision:  68.32%; recall:  61.73%; FB1:  64.86
+2024-04-26 14:19:43,496:INFO: accuracy:  95.42%; precision:  68.32%; recall:  61.73%; FB1:  64.86
+2024-04-26 14:19:43,496:INFO: : precision:  57.82%; recall:  52.83%; FB1:  55.21  1081
+2024-04-26 14:19:43,496:INFO: : precision:  57.82%; recall:  52.83%; FB1:  55.21  1081
+2024-04-26 14:19:43,496:INFO: : precision:  57.82%; recall:  52.83%; FB1:  55.21  1081
+2024-04-26 14:19:43,496:INFO: : precision:  57.82%; recall:  52.83%; FB1:  55.21  1081
+2024-04-26 14:19:43,496:INFO: 产品: precision:  78.56%; recall:  70.21%; FB1:  74.15  1110
+2024-04-26 14:19:43,496:INFO: 产品: precision:  78.56%; recall:  70.21%; FB1:  74.15  1110
+2024-04-26 14:19:49,648:INFO: 2024-04-26 14:19:43 epoch 20, step 1, loss: 3.179, global_step: 742
+2024-04-26 14:19:49,648:INFO: 2024-04-26 14:19:43 epoch 20, step 1, loss: 3.179, global_step: 742
+2024-04-26 14:22:46,967:INFO: 2024-04-26 14:19:43 epoch 20, step 39, loss: 2.36, global_step: 780
+2024-04-26 14:22:46,967:INFO: 2024-04-26 14:19:43 epoch 20, step 39, loss: 2.36, global_step: 780
+2024-04-26 14:22:49,478:INFO: ===========validation / test===========
+2024-04-26 14:22:49,478:INFO: ===========validation / test===========
+2024-04-26 14:22:55,637:INFO: processed 35226 tokens with 2425 phrases; found: 2317 phrases; correct: 1657.
+2024-04-26 14:22:55,637:INFO: processed 35226 tokens with 2425 phrases; found: 2317 phrases; correct: 1657.
+2024-04-26 14:22:55,637:INFO: accuracy:  95.66%; precision:  71.51%; recall:  68.33%; FB1:  69.89
+2024-04-26 14:22:55,637:INFO: accuracy:  95.66%; precision:  71.51%; recall:  68.33%; FB1:  69.89
+2024-04-26 14:22:55,637:INFO: : precision:  62.32%; recall:  59.43%; FB1:  60.84  1128
+2024-04-26 14:22:55,637:INFO: : precision:  62.32%; recall:  59.43%; FB1:  60.84  1128
+2024-04-26 14:22:55,637:INFO: : precision:  62.32%; recall:  59.43%; FB1:  60.84  1128
+2024-04-26 14:22:55,637:INFO: : precision:  62.32%; recall:  59.43%; FB1:  60.84  1128
+2024-04-26 14:22:55,637:INFO: 产品: precision:  80.24%; recall:  76.81%; FB1:  78.49  1189
+2024-04-26 14:22:55,637:INFO: 产品: precision:  80.24%; recall:  76.81%; FB1:  78.49  1189
+2024-04-26 14:23:00,200:INFO: 2024-04-26 14:22:55 epoch 21, step 1, loss: 3.119, global_step: 781
+2024-04-26 14:23:00,200:INFO: 2024-04-26 14:22:55 epoch 21, step 1, loss: 3.119, global_step: 781
+2024-04-26 14:25:38,345:INFO: 2024-04-26 14:22:55 epoch 21, step 39, loss: 2.382, global_step: 819
+2024-04-26 14:25:38,345:INFO: 2024-04-26 14:22:55 epoch 21, step 39, loss: 2.382, global_step: 819
+2024-04-26 14:25:40,996:INFO: ===========validation / test===========
+2024-04-26 14:25:40,996:INFO: ===========validation / test===========
+2024-04-26 14:25:46,705:INFO: processed 35226 tokens with 2425 phrases; found: 2435 phrases; correct: 1725.
+2024-04-26 14:25:46,705:INFO: processed 35226 tokens with 2425 phrases; found: 2435 phrases; correct: 1725.
+2024-04-26 14:25:46,705:INFO: accuracy:  95.58%; precision:  70.84%; recall:  71.13%; FB1:  70.99
+2024-04-26 14:25:46,705:INFO: accuracy:  95.58%; precision:  70.84%; recall:  71.13%; FB1:  70.99
+2024-04-26 14:25:46,705:INFO: : precision:  62.73%; recall:  62.89%; FB1:  62.81  1186
+2024-04-26 14:25:46,705:INFO: : precision:  62.73%; recall:  62.89%; FB1:  62.81  1186
+2024-04-26 14:25:46,705:INFO: : precision:  62.73%; recall:  62.89%; FB1:  62.81  1186
+2024-04-26 14:25:46,705:INFO: : precision:  62.73%; recall:  62.89%; FB1:  62.81  1186
+2024-04-26 14:25:46,705:INFO: 产品: precision:  78.54%; recall:  78.99%; FB1:  78.76  1249
+2024-04-26 14:25:46,705:INFO: 产品: precision:  78.54%; recall:  78.99%; FB1:  78.76  1249
+2024-04-26 14:25:50,357:INFO: 2024-04-26 14:25:46 epoch 22, step 1, loss: 2.322, global_step: 820
+2024-04-26 14:25:50,357:INFO: 2024-04-26 14:25:46 epoch 22, step 1, loss: 2.322, global_step: 820
+2024-04-26 14:28:33,452:INFO: 2024-04-26 14:25:46 epoch 22, step 39, loss: 2.174, global_step: 858
+2024-04-26 14:28:33,452:INFO: 2024-04-26 14:25:46 epoch 22, step 39, loss: 2.174, global_step: 858
+2024-04-26 14:28:35,864:INFO: ===========validation / test===========
+2024-04-26 14:28:35,864:INFO: ===========validation / test===========
+2024-04-26 14:28:41,729:INFO: processed 35226 tokens with 2425 phrases; found: 2247 phrases; correct: 1645.
+2024-04-26 14:28:41,729:INFO: processed 35226 tokens with 2425 phrases; found: 2247 phrases; correct: 1645.
+2024-04-26 14:28:41,729:INFO: accuracy:  95.84%; precision:  73.21%; recall:  67.84%; FB1:  70.42
+2024-04-26 14:28:41,729:INFO: accuracy:  95.84%; precision:  73.21%; recall:  67.84%; FB1:  70.42
+2024-04-26 14:28:41,729:INFO: : precision:  64.23%; recall:  59.51%; FB1:  61.78  1096
+2024-04-26 14:28:41,729:INFO: : precision:  64.23%; recall:  59.51%; FB1:  61.78  1096
+2024-04-26 14:28:41,729:INFO: : precision:  64.23%; recall:  59.51%; FB1:  61.78  1096
+2024-04-26 14:28:41,729:INFO: : precision:  64.23%; recall:  59.51%; FB1:  61.78  1096
+2024-04-26 14:28:41,729:INFO: 产品: precision:  81.75%; recall:  75.76%; FB1:  78.65  1151
+2024-04-26 14:28:41,729:INFO: 产品: precision:  81.75%; recall:  75.76%; FB1:  78.65  1151
+2024-04-26 14:28:45,397:INFO: 2024-04-26 14:28:41 epoch 23, step 1, loss: 2.208, global_step: 859
+2024-04-26 14:28:45,397:INFO: 2024-04-26 14:28:41 epoch 23, step 1, loss: 2.208, global_step: 859
+2024-04-26 14:31:31,517:INFO: 2024-04-26 14:28:41 epoch 23, step 39, loss: 1.587, global_step: 897
+2024-04-26 14:31:31,517:INFO: 2024-04-26 14:28:41 epoch 23, step 39, loss: 1.587, global_step: 897
+2024-04-26 14:31:33,685:INFO: ===========validation / test===========
+2024-04-26 14:31:33,685:INFO: ===========validation / test===========
+2024-04-26 14:31:39,593:INFO: processed 35226 tokens with 2425 phrases; found: 2360 phrases; correct: 1686.
+2024-04-26 14:31:39,593:INFO: processed 35226 tokens with 2425 phrases; found: 2360 phrases; correct: 1686.
+2024-04-26 14:31:39,594:INFO: accuracy:  95.72%; precision:  71.44%; recall:  69.53%; FB1:  70.47
+2024-04-26 14:31:39,594:INFO: accuracy:  95.72%; precision:  71.44%; recall:  69.53%; FB1:  70.47
+2024-04-26 14:31:39,594:INFO: : precision:  62.32%; recall:  60.52%; FB1:  61.41  1149
+2024-04-26 14:31:39,594:INFO: : precision:  62.32%; recall:  60.52%; FB1:  61.41  1149
+2024-04-26 14:31:39,594:INFO: : precision:  62.32%; recall:  60.52%; FB1:  61.41  1149
+2024-04-26 14:31:39,594:INFO: : precision:  62.32%; recall:  60.52%; FB1:  61.41  1149
+2024-04-26 14:31:39,594:INFO: 产品: precision:  80.10%; recall:  78.10%; FB1:  79.09  1211
+2024-04-26 14:31:39,594:INFO: 产品: precision:  80.10%; recall:  78.10%; FB1:  79.09  1211
+2024-04-26 14:31:43,932:INFO: 2024-04-26 14:31:39 epoch 24, step 1, loss: 2.419, global_step: 898
+2024-04-26 14:31:43,932:INFO: 2024-04-26 14:31:39 epoch 24, step 1, loss: 2.419, global_step: 898
+2024-04-26 14:34:24,647:INFO: 2024-04-26 14:31:39 epoch 24, step 39, loss: 1.702, global_step: 936
+2024-04-26 14:34:24,647:INFO: 2024-04-26 14:31:39 epoch 24, step 39, loss: 1.702, global_step: 936
+2024-04-26 14:34:26,532:INFO: ===========validation / test===========
+2024-04-26 14:34:26,532:INFO: ===========validation / test===========
+2024-04-26 14:34:32,166:INFO: processed 35226 tokens with 2425 phrases; found: 2217 phrases; correct: 1641.
+2024-04-26 14:34:32,166:INFO: processed 35226 tokens with 2425 phrases; found: 2217 phrases; correct: 1641.
+2024-04-26 14:34:32,166:INFO: accuracy:  95.87%; precision:  74.02%; recall:  67.67%; FB1:  70.70
+2024-04-26 14:34:32,166:INFO: accuracy:  95.87%; precision:  74.02%; recall:  67.67%; FB1:  70.70
+2024-04-26 14:34:32,167:INFO: : precision:  63.89%; recall:  58.33%; FB1:  60.98  1080
+2024-04-26 14:34:32,167:INFO: : precision:  63.89%; recall:  58.33%; FB1:  60.98  1080
+2024-04-26 14:34:32,167:INFO: : precision:  63.89%; recall:  58.33%; FB1:  60.98  1080
+2024-04-26 14:34:32,167:INFO: : precision:  63.89%; recall:  58.33%; FB1:  60.98  1080
+2024-04-26 14:34:32,167:INFO: 产品: precision:  83.64%; recall:  76.57%; FB1:  79.95  1137
+2024-04-26 14:34:32,167:INFO: 产品: precision:  83.64%; recall:  76.57%; FB1:  79.95  1137
+2024-04-26 14:34:35,233:INFO: 2024-04-26 14:34:32 epoch 25, step 1, loss: 1.906, global_step: 937
+2024-04-26 14:34:35,233:INFO: 2024-04-26 14:34:32 epoch 25, step 1, loss: 1.906, global_step: 937
+2024-04-26 14:37:09,874:INFO: 2024-04-26 14:34:32 epoch 25, step 39, loss: 1.871, global_step: 975
+2024-04-26 14:37:09,874:INFO: 2024-04-26 14:34:32 epoch 25, step 39, loss: 1.871, global_step: 975
+2024-04-26 14:37:12,300:INFO: ===========validation / test===========
+2024-04-26 14:37:12,300:INFO: ===========validation / test===========
+2024-04-26 14:37:18,136:INFO: processed 35226 tokens with 2425 phrases; found: 2137 phrases; correct: 1628.
+2024-04-26 14:37:18,136:INFO: processed 35226 tokens with 2425 phrases; found: 2137 phrases; correct: 1628.
+2024-04-26 14:37:18,136:INFO: accuracy:  96.06%; precision:  76.18%; recall:  67.13%; FB1:  71.37
+2024-04-26 14:37:18,136:INFO: accuracy:  96.06%; precision:  76.18%; recall:  67.13%; FB1:  71.37
+2024-04-26 14:37:18,136:INFO: : precision:  66.83%; recall:  58.75%; FB1:  62.53  1040
+2024-04-26 14:37:18,136:INFO: : precision:  66.83%; recall:  58.75%; FB1:  62.53  1040
+2024-04-26 14:37:18,136:INFO: : precision:  66.83%; recall:  58.75%; FB1:  62.53  1040
+2024-04-26 14:37:18,136:INFO: : precision:  66.83%; recall:  58.75%; FB1:  62.53  1040
+2024-04-26 14:37:18,137:INFO: 产品: precision:  85.05%; recall:  75.12%; FB1:  79.78  1097
+2024-04-26 14:37:18,137:INFO: 产品: precision:  85.05%; recall:  75.12%; FB1:  79.78  1097
+2024-04-26 14:37:23,597:INFO: 2024-04-26 14:37:18 epoch 26, step 1, loss: 2.256, global_step: 976
+2024-04-26 14:37:23,597:INFO: 2024-04-26 14:37:18 epoch 26, step 1, loss: 2.256, global_step: 976
+2024-04-26 14:39:56,301:INFO: 2024-04-26 14:37:18 epoch 26, step 39, loss: 2.5, global_step: 1014
+2024-04-26 14:39:56,301:INFO: 2024-04-26 14:37:18 epoch 26, step 39, loss: 2.5, global_step: 1014
+2024-04-26 14:39:58,967:INFO: ===========validation / test===========
+2024-04-26 14:39:58,967:INFO: ===========validation / test===========
+2024-04-26 14:40:04,693:INFO: processed 35226 tokens with 2425 phrases; found: 2020 phrases; correct: 1524.
+2024-04-26 14:40:04,693:INFO: processed 35226 tokens with 2425 phrases; found: 2020 phrases; correct: 1524.
+2024-04-26 14:40:04,694:INFO: accuracy:  95.89%; precision:  75.45%; recall:  62.85%; FB1:  68.57
+2024-04-26 14:40:04,694:INFO: accuracy:  95.89%; precision:  75.45%; recall:  62.85%; FB1:  68.57
+2024-04-26 14:40:04,694:INFO: : precision:  65.12%; recall:  54.61%; FB1:  59.40  992
+2024-04-26 14:40:04,694:INFO: : precision:  65.12%; recall:  54.61%; FB1:  59.40  992
+2024-04-26 14:40:04,694:INFO: : precision:  65.12%; recall:  54.61%; FB1:  59.40  992
+2024-04-26 14:40:04,694:INFO: : precision:  65.12%; recall:  54.61%; FB1:  59.40  992
+2024-04-26 14:40:04,694:INFO: 产品: precision:  85.41%; recall:  70.69%; FB1:  77.36  1028
+2024-04-26 14:40:04,694:INFO: 产品: precision:  85.41%; recall:  70.69%; FB1:  77.36  1028
+2024-04-26 14:40:08,500:INFO: 2024-04-26 14:40:04 epoch 27, step 1, loss: 1.821, global_step: 1015
+2024-04-26 14:40:08,500:INFO: 2024-04-26 14:40:04 epoch 27, step 1, loss: 1.821, global_step: 1015
+2024-04-26 14:42:52,455:INFO: 2024-04-26 14:40:04 epoch 27, step 39, loss: 2.13, global_step: 1053
+2024-04-26 14:42:52,455:INFO: 2024-04-26 14:40:04 epoch 27, step 39, loss: 2.13, global_step: 1053
+2024-04-26 14:42:54,668:INFO: ===========validation / test===========
+2024-04-26 14:42:54,668:INFO: ===========validation / test===========
+2024-04-26 14:43:00,165:INFO: processed 35226 tokens with 2425 phrases; found: 2124 phrases; correct: 1626.
+2024-04-26 14:43:00,165:INFO: processed 35226 tokens with 2425 phrases; found: 2124 phrases; correct: 1626.
+2024-04-26 14:43:00,165:INFO: accuracy:  96.19%; precision:  76.55%; recall:  67.05%; FB1:  71.49
+2024-04-26 14:43:00,165:INFO: accuracy:  96.19%; precision:  76.55%; recall:  67.05%; FB1:  71.49
+2024-04-26 14:43:00,165:INFO: : precision:  67.24%; recall:  59.00%; FB1:  62.85  1038
+2024-04-26 14:43:00,165:INFO: : precision:  67.24%; recall:  59.00%; FB1:  62.85  1038
+2024-04-26 14:43:00,165:INFO: : precision:  67.24%; recall:  59.00%; FB1:  62.85  1038
+2024-04-26 14:43:00,165:INFO: : precision:  67.24%; recall:  59.00%; FB1:  62.85  1038
+2024-04-26 14:43:00,165:INFO: 产品: precision:  85.45%; recall:  74.72%; FB1:  79.73  1086
+2024-04-26 14:43:00,165:INFO: 产品: precision:  85.45%; recall:  74.72%; FB1:  79.73  1086
+2024-04-26 14:43:04,193:INFO: 2024-04-26 14:43:00 epoch 28, step 1, loss: 1.711, global_step: 1054
+2024-04-26 14:43:04,193:INFO: 2024-04-26 14:43:00 epoch 28, step 1, loss: 1.711, global_step: 1054
+2024-04-26 14:45:54,030:INFO: 2024-04-26 14:43:00 epoch 28, step 39, loss: 2.577, global_step: 1092
+2024-04-26 14:45:54,030:INFO: 2024-04-26 14:43:00 epoch 28, step 39, loss: 2.577, global_step: 1092
+2024-04-26 14:45:58,368:INFO: ===========validation / test===========
+2024-04-26 14:45:58,368:INFO: ===========validation / test===========
+2024-04-26 14:46:07,403:INFO: processed 35226 tokens with 2425 phrases; found: 2332 phrases; correct: 1782.
+2024-04-26 14:46:07,403:INFO: processed 35226 tokens with 2425 phrases; found: 2332 phrases; correct: 1782.
+2024-04-26 14:46:07,403:INFO: accuracy:  96.46%; precision:  76.42%; recall:  73.48%; FB1:  74.92
+2024-04-26 14:46:07,403:INFO: accuracy:  96.46%; precision:  76.42%; recall:  73.48%; FB1:  74.92
+2024-04-26 14:46:07,403:INFO: : precision:  69.04%; recall:  66.36%; FB1:  67.67  1137
+2024-04-26 14:46:07,403:INFO: : precision:  69.04%; recall:  66.36%; FB1:  67.67  1137
+2024-04-26 14:46:07,404:INFO: : precision:  69.04%; recall:  66.36%; FB1:  67.67  1137
+2024-04-26 14:46:07,404:INFO: : precision:  69.04%; recall:  66.36%; FB1:  67.67  1137
+2024-04-26 14:46:07,404:INFO: 产品: precision:  83.43%; recall:  80.27%; FB1:  81.82  1195
+2024-04-26 14:46:07,404:INFO: 产品: precision:  83.43%; recall:  80.27%; FB1:  81.82  1195
+2024-04-26 14:46:14,595:INFO: 2024-04-26 14:46:07 epoch 29, step 1, loss: 1.936, global_step: 1093
+2024-04-26 14:46:14,595:INFO: 2024-04-26 14:46:07 epoch 29, step 1, loss: 1.936, global_step: 1093
+2024-04-26 14:48:54,572:INFO: 2024-04-26 14:46:07 epoch 29, step 39, loss: 2.664, global_step: 1131
+2024-04-26 14:48:54,572:INFO: 2024-04-26 14:46:07 epoch 29, step 39, loss: 2.664, global_step: 1131
+2024-04-26 14:48:56,947:INFO: ===========validation / test===========
+2024-04-26 14:48:56,947:INFO: ===========validation / test===========
+2024-04-26 14:49:02,416:INFO: processed 35226 tokens with 2425 phrases; found: 2327 phrases; correct: 1724.
+2024-04-26 14:49:02,416:INFO: processed 35226 tokens with 2425 phrases; found: 2327 phrases; correct: 1724.
+2024-04-26 14:49:02,416:INFO: accuracy:  96.16%; precision:  74.09%; recall:  71.09%; FB1:  72.56
+2024-04-26 14:49:02,416:INFO: accuracy:  96.16%; precision:  74.09%; recall:  71.09%; FB1:  72.56
+2024-04-26 14:49:02,417:INFO: : precision:  65.88%; recall:  63.48%; FB1:  64.66  1140
+2024-04-26 14:49:02,417:INFO: : precision:  65.88%; recall:  63.48%; FB1:  64.66  1140
+2024-04-26 14:49:02,417:INFO: : precision:  65.88%; recall:  63.48%; FB1:  64.66  1140
+2024-04-26 14:49:02,417:INFO: : precision:  65.88%; recall:  63.48%; FB1:  64.66  1140
+2024-04-26 14:49:02,417:INFO: 产品: precision:  81.97%; recall:  78.34%; FB1:  80.12  1187
+2024-04-26 14:49:02,417:INFO: 产品: precision:  81.97%; recall:  78.34%; FB1:  80.12  1187
+2024-04-26 14:49:07,787:INFO: 2024-04-26 14:49:02 epoch 30, step 1, loss: 1.989, global_step: 1132
+2024-04-26 14:49:07,787:INFO: 2024-04-26 14:49:02 epoch 30, step 1, loss: 1.989, global_step: 1132
+2024-04-26 14:51:33,548:INFO: 2024-04-26 14:49:02 epoch 30, step 39, loss: 1.458, global_step: 1170
+2024-04-26 14:51:33,548:INFO: 2024-04-26 14:49:02 epoch 30, step 39, loss: 1.458, global_step: 1170
+2024-04-26 14:51:35,490:INFO: ===========validation / test===========
+2024-04-26 14:51:35,490:INFO: ===========validation / test===========
+2024-04-26 14:51:40,264:INFO: processed 35226 tokens with 2425 phrases; found: 2366 phrases; correct: 1862.
+2024-04-26 14:51:40,264:INFO: processed 35226 tokens with 2425 phrases; found: 2366 phrases; correct: 1862.
+2024-04-26 14:51:40,264:INFO: accuracy:  96.89%; precision:  78.70%; recall:  76.78%; FB1:  77.73
+2024-04-26 14:51:40,264:INFO: accuracy:  96.89%; precision:  78.70%; recall:  76.78%; FB1:  77.73
+2024-04-26 14:51:40,264:INFO: : precision:  72.36%; recall:  70.58%; FB1:  71.46  1154
+2024-04-26 14:51:40,264:INFO: : precision:  72.36%; recall:  70.58%; FB1:  71.46  1154
+2024-04-26 14:51:40,264:INFO: : precision:  72.36%; recall:  70.58%; FB1:  71.46  1154
+2024-04-26 14:51:40,264:INFO: : precision:  72.36%; recall:  70.58%; FB1:  71.46  1154
+2024-04-26 14:51:40,264:INFO: 产品: precision:  84.74%; recall:  82.69%; FB1:  83.70  1212
+2024-04-26 14:51:40,264:INFO: 产品: precision:  84.74%; recall:  82.69%; FB1:  83.70  1212
+2024-04-26 14:51:48,940:INFO: 2024-04-26 14:51:40 epoch 31, step 1, loss: 2.433, global_step: 1171
+2024-04-26 14:51:48,940:INFO: 2024-04-26 14:51:40 epoch 31, step 1, loss: 2.433, global_step: 1171
+2024-04-26 14:54:27,829:INFO: 2024-04-26 14:51:40 epoch 31, step 39, loss: 1.381, global_step: 1209
+2024-04-26 14:54:27,829:INFO: 2024-04-26 14:51:40 epoch 31, step 39, loss: 1.381, global_step: 1209
+2024-04-26 14:54:30,665:INFO: ===========validation / test===========
+2024-04-26 14:54:30,665:INFO: ===========validation / test===========
+2024-04-26 14:54:38,488:INFO: processed 35226 tokens with 2425 phrases; found: 2232 phrases; correct: 1733.
+2024-04-26 14:54:38,488:INFO: processed 35226 tokens with 2425 phrases; found: 2232 phrases; correct: 1733.
+2024-04-26 14:54:38,488:INFO: accuracy:  96.51%; precision:  77.64%; recall:  71.46%; FB1:  74.43
+2024-04-26 14:54:38,488:INFO: accuracy:  96.51%; precision:  77.64%; recall:  71.46%; FB1:  74.43
+2024-04-26 14:54:38,489:INFO: : precision:  69.21%; recall:  63.65%; FB1:  66.31  1088
+2024-04-26 14:54:38,489:INFO: : precision:  69.21%; recall:  63.65%; FB1:  66.31  1088
+2024-04-26 14:54:38,489:INFO: : precision:  69.21%; recall:  63.65%; FB1:  66.31  1088
+2024-04-26 14:54:38,489:INFO: : precision:  69.21%; recall:  63.65%; FB1:  66.31  1088
+2024-04-26 14:54:38,489:INFO: 产品: precision:  85.66%; recall:  78.90%; FB1:  82.15  1144
+2024-04-26 14:54:38,489:INFO: 产品: precision:  85.66%; recall:  78.90%; FB1:  82.15  1144
+2024-04-26 14:54:43,698:INFO: 2024-04-26 14:54:38 epoch 32, step 1, loss: 1.851, global_step: 1210
+2024-04-26 14:54:43,698:INFO: 2024-04-26 14:54:38 epoch 32, step 1, loss: 1.851, global_step: 1210
+2024-04-26 14:57:29,585:INFO: 2024-04-26 14:54:38 epoch 32, step 39, loss: 2.76, global_step: 1248
+2024-04-26 14:57:29,585:INFO: 2024-04-26 14:54:38 epoch 32, step 39, loss: 2.76, global_step: 1248
+2024-04-26 14:57:30,891:INFO: ===========validation / test===========
+2024-04-26 14:57:30,891:INFO: ===========validation / test===========
+2024-04-26 14:57:35,566:INFO: processed 35226 tokens with 2425 phrases; found: 2033 phrases; correct: 1487.
+2024-04-26 14:57:35,566:INFO: processed 35226 tokens with 2425 phrases; found: 2033 phrases; correct: 1487.
+2024-04-26 14:57:35,566:INFO: accuracy:  95.66%; precision:  73.14%; recall:  61.32%; FB1:  66.71
+2024-04-26 14:57:35,566:INFO: accuracy:  95.66%; precision:  73.14%; recall:  61.32%; FB1:  66.71
+2024-04-26 14:57:35,567:INFO: : precision:  62.45%; recall:  52.58%; FB1:  57.09  996
+2024-04-26 14:57:35,567:INFO: : precision:  62.45%; recall:  52.58%; FB1:  57.09  996
+2024-04-26 14:57:35,567:INFO: : precision:  62.45%; recall:  52.58%; FB1:  57.09  996
+2024-04-26 14:57:35,567:INFO: : precision:  62.45%; recall:  52.58%; FB1:  57.09  996
+2024-04-26 14:57:35,567:INFO: 产品: precision:  83.41%; recall:  69.65%; FB1:  75.91  1037
+2024-04-26 14:57:35,567:INFO: 产品: precision:  83.41%; recall:  69.65%; FB1:  75.91  1037
+2024-04-26 14:57:40,559:INFO: 2024-04-26 14:57:35 epoch 33, step 1, loss: 1.79, global_step: 1249
+2024-04-26 14:57:40,559:INFO: 2024-04-26 14:57:35 epoch 33, step 1, loss: 1.79, global_step: 1249
+2024-04-26 15:00:20,117:INFO: 2024-04-26 14:57:35 epoch 33, step 39, loss: 1.202, global_step: 1287
+2024-04-26 15:00:20,117:INFO: 2024-04-26 14:57:35 epoch 33, step 39, loss: 1.202, global_step: 1287
+2024-04-26 15:00:21,970:INFO: ===========validation / test===========
+2024-04-26 15:00:21,970:INFO: ===========validation / test===========
+2024-04-26 15:00:27,907:INFO: processed 35226 tokens with 2425 phrases; found: 2156 phrases; correct: 1675.
+2024-04-26 15:00:27,907:INFO: processed 35226 tokens with 2425 phrases; found: 2156 phrases; correct: 1675.
+2024-04-26 15:00:27,907:INFO: accuracy:  96.33%; precision:  77.69%; recall:  69.07%; FB1:  73.13
+2024-04-26 15:00:27,907:INFO: accuracy:  96.33%; precision:  77.69%; recall:  69.07%; FB1:  73.13
+2024-04-26 15:00:27,907:INFO: : precision:  68.73%; recall:  60.95%; FB1:  64.61  1049
+2024-04-26 15:00:27,907:INFO: : precision:  68.73%; recall:  60.95%; FB1:  64.61  1049
+2024-04-26 15:00:27,907:INFO: : precision:  68.73%; recall:  60.95%; FB1:  64.61  1049
+2024-04-26 15:00:27,907:INFO: : precision:  68.73%; recall:  60.95%; FB1:  64.61  1049
+2024-04-26 15:00:27,907:INFO: 产品: precision:  86.18%; recall:  76.81%; FB1:  81.23  1107
+2024-04-26 15:00:27,907:INFO: 产品: precision:  86.18%; recall:  76.81%; FB1:  81.23  1107
+2024-04-26 15:00:32,249:INFO: 2024-04-26 15:00:27 epoch 34, step 1, loss: 1.836, global_step: 1288
+2024-04-26 15:00:32,249:INFO: 2024-04-26 15:00:27 epoch 34, step 1, loss: 1.836, global_step: 1288
+2024-04-26 15:03:16,155:INFO: 2024-04-26 15:00:27 epoch 34, step 39, loss: 1.458, global_step: 1326
+2024-04-26 15:03:16,155:INFO: 2024-04-26 15:00:27 epoch 34, step 39, loss: 1.458, global_step: 1326
+2024-04-26 15:03:17,557:INFO: ===========validation / test===========
+2024-04-26 15:03:17,557:INFO: ===========validation / test===========
+2024-04-26 15:03:22,683:INFO: processed 35226 tokens with 2425 phrases; found: 2124 phrases; correct: 1600.
+2024-04-26 15:03:22,683:INFO: processed 35226 tokens with 2425 phrases; found: 2124 phrases; correct: 1600.
+2024-04-26 15:03:22,683:INFO: accuracy:  96.26%; precision:  75.33%; recall:  65.98%; FB1:  70.35
+2024-04-26 15:03:22,683:INFO: accuracy:  96.26%; precision:  75.33%; recall:  65.98%; FB1:  70.35
+2024-04-26 15:03:22,683:INFO: : precision:  66.51%; recall:  58.92%; FB1:  62.48  1048
+2024-04-26 15:03:22,683:INFO: : precision:  66.51%; recall:  58.92%; FB1:  62.48  1048
+2024-04-26 15:03:22,683:INFO: : precision:  66.51%; recall:  58.92%; FB1:  62.48  1048
+2024-04-26 15:03:22,683:INFO: : precision:  66.51%; recall:  58.92%; FB1:  62.48  1048
+2024-04-26 15:03:22,683:INFO: 产品: precision:  83.92%; recall:  72.71%; FB1:  77.91  1076
+2024-04-26 15:03:22,683:INFO: 产品: precision:  83.92%; recall:  72.71%; FB1:  77.91  1076
+2024-04-26 15:03:25,966:INFO: 2024-04-26 15:03:22 epoch 35, step 1, loss: 1.692, global_step: 1327
+2024-04-26 15:03:25,966:INFO: 2024-04-26 15:03:22 epoch 35, step 1, loss: 1.692, global_step: 1327
+2024-04-26 15:06:08,808:INFO: 2024-04-26 15:03:22 epoch 35, step 39, loss: 1.991, global_step: 1365
+2024-04-26 15:06:08,808:INFO: 2024-04-26 15:03:22 epoch 35, step 39, loss: 1.991, global_step: 1365
+2024-04-26 15:06:10,189:INFO: ===========validation / test===========
+2024-04-26 15:06:10,189:INFO: ===========validation / test===========
+2024-04-26 15:06:16,175:INFO: processed 35226 tokens with 2425 phrases; found: 2183 phrases; correct: 1633.
+2024-04-26 15:06:16,175:INFO: processed 35226 tokens with 2425 phrases; found: 2183 phrases; correct: 1633.
+2024-04-26 15:06:16,176:INFO: accuracy:  96.03%; precision:  74.81%; recall:  67.34%; FB1:  70.88
+2024-04-26 15:06:16,176:INFO: accuracy:  96.03%; precision:  74.81%; recall:  67.34%; FB1:  70.88
+2024-04-26 15:06:16,176:INFO: : precision:  65.39%; recall:  59.09%; FB1:  62.08  1069
+2024-04-26 15:06:16,176:INFO: : precision:  65.39%; recall:  59.09%; FB1:  62.08  1069
+2024-04-26 15:06:16,176:INFO: : precision:  65.39%; recall:  59.09%; FB1:  62.08  1069
+2024-04-26 15:06:16,176:INFO: : precision:  65.39%; recall:  59.09%; FB1:  62.08  1069
+2024-04-26 15:06:16,176:INFO: 产品: precision:  83.84%; recall:  75.20%; FB1:  79.29  1114
+2024-04-26 15:06:16,176:INFO: 产品: precision:  83.84%; recall:  75.20%; FB1:  79.29  1114
+2024-04-26 15:06:21,038:INFO: 2024-04-26 15:06:16 epoch 36, step 1, loss: 2.324, global_step: 1366
+2024-04-26 15:06:21,038:INFO: 2024-04-26 15:06:16 epoch 36, step 1, loss: 2.324, global_step: 1366
+2024-04-26 15:08:49,054:INFO: 2024-04-26 15:06:16 epoch 36, step 39, loss: 1.152, global_step: 1404
+2024-04-26 15:08:49,054:INFO: 2024-04-26 15:06:16 epoch 36, step 39, loss: 1.152, global_step: 1404
+2024-04-26 15:08:51,046:INFO: ===========validation / test===========
+2024-04-26 15:08:51,046:INFO: ===========validation / test===========
+2024-04-26 15:08:56,310:INFO: processed 35226 tokens with 2425 phrases; found: 2302 phrases; correct: 1781.
+2024-04-26 15:08:56,310:INFO: processed 35226 tokens with 2425 phrases; found: 2302 phrases; correct: 1781.
+2024-04-26 15:08:56,310:INFO: accuracy:  96.54%; precision:  77.37%; recall:  73.44%; FB1:  75.35
+2024-04-26 15:08:56,310:INFO: accuracy:  96.54%; precision:  77.37%; recall:  73.44%; FB1:  75.35
+2024-04-26 15:08:56,310:INFO: : precision:  69.61%; recall:  66.02%; FB1:  67.77  1122
+2024-04-26 15:08:56,310:INFO: : precision:  69.61%; recall:  66.02%; FB1:  67.77  1122
+2024-04-26 15:08:56,310:INFO: : precision:  69.61%; recall:  66.02%; FB1:  67.77  1122
+2024-04-26 15:08:56,310:INFO: : precision:  69.61%; recall:  66.02%; FB1:  67.77  1122
+2024-04-26 15:08:56,310:INFO: 产品: precision:  84.75%; recall:  80.52%; FB1:  82.58  1180
+2024-04-26 15:08:56,310:INFO: 产品: precision:  84.75%; recall:  80.52%; FB1:  82.58  1180
+2024-04-26 15:08:59,417:INFO: 2024-04-26 15:08:56 epoch 37, step 1, loss: 2.009, global_step: 1405
+2024-04-26 15:08:59,417:INFO: 2024-04-26 15:08:56 epoch 37, step 1, loss: 2.009, global_step: 1405
+2024-04-26 15:11:44,051:INFO: 2024-04-26 15:08:56 epoch 37, step 39, loss: 1.683, global_step: 1443
+2024-04-26 15:11:44,051:INFO: 2024-04-26 15:08:56 epoch 37, step 39, loss: 1.683, global_step: 1443
+2024-04-26 15:11:45,756:INFO: ===========validation / test===========
+2024-04-26 15:11:45,756:INFO: ===========validation / test===========
+2024-04-26 15:11:50,564:INFO: processed 35226 tokens with 2425 phrases; found: 2318 phrases; correct: 1869.
+2024-04-26 15:11:50,564:INFO: processed 35226 tokens with 2425 phrases; found: 2318 phrases; correct: 1869.
+2024-04-26 15:11:50,564:INFO: accuracy:  97.10%; precision:  80.63%; recall:  77.07%; FB1:  78.81
+2024-04-26 15:11:50,564:INFO: accuracy:  97.10%; precision:  80.63%; recall:  77.07%; FB1:  78.81
+2024-04-26 15:11:50,564:INFO: : precision:  74.18%; recall:  70.92%; FB1:  72.52  1131
+2024-04-26 15:11:50,564:INFO: : precision:  74.18%; recall:  70.92%; FB1:  72.52  1131
+2024-04-26 15:11:50,564:INFO: : precision:  74.18%; recall:  70.92%; FB1:  72.52  1131
+2024-04-26 15:11:50,564:INFO: : precision:  74.18%; recall:  70.92%; FB1:  72.52  1131
+2024-04-26 15:11:50,564:INFO: 产品: precision:  86.77%; recall:  82.93%; FB1:  84.81  1187
+2024-04-26 15:11:50,564:INFO: 产品: precision:  86.77%; recall:  82.93%; FB1:  84.81  1187
+2024-04-26 15:11:54,371:INFO: 2024-04-26 15:11:50 epoch 38, step 1, loss: 1.082, global_step: 1444
+2024-04-26 15:11:54,371:INFO: 2024-04-26 15:11:50 epoch 38, step 1, loss: 1.082, global_step: 1444
+2024-04-26 15:14:35,848:INFO: 2024-04-26 15:11:50 epoch 38, step 39, loss: 2.353, global_step: 1482
+2024-04-26 15:14:35,848:INFO: 2024-04-26 15:11:50 epoch 38, step 39, loss: 2.353, global_step: 1482
+2024-04-26 15:14:37,397:INFO: ===========validation / test===========
+2024-04-26 15:14:37,397:INFO: ===========validation / test===========
+2024-04-26 15:14:42,591:INFO: processed 35226 tokens with 2425 phrases; found: 1960 phrases; correct: 1526.
+2024-04-26 15:14:42,591:INFO: processed 35226 tokens with 2425 phrases; found: 1960 phrases; correct: 1526.
+2024-04-26 15:14:42,591:INFO: accuracy:  96.04%; precision:  77.86%; recall:  62.93%; FB1:  69.60
+2024-04-26 15:14:42,591:INFO: accuracy:  96.04%; precision:  77.86%; recall:  62.93%; FB1:  69.60
+2024-04-26 15:14:42,592:INFO: : precision:  67.84%; recall:  55.28%; FB1:  60.92  964
+2024-04-26 15:14:42,592:INFO: : precision:  67.84%; recall:  55.28%; FB1:  60.92  964
+2024-04-26 15:14:42,592:INFO: : precision:  67.84%; recall:  55.28%; FB1:  60.92  964
+2024-04-26 15:14:42,592:INFO: : precision:  67.84%; recall:  55.28%; FB1:  60.92  964
+2024-04-26 15:14:42,592:INFO: 产品: precision:  87.55%; recall:  70.21%; FB1:  77.93  996
+2024-04-26 15:14:42,592:INFO: 产品: precision:  87.55%; recall:  70.21%; FB1:  77.93  996
+2024-04-26 15:14:46,109:INFO: 2024-04-26 15:14:42 epoch 39, step 1, loss: 1.598, global_step: 1483
+2024-04-26 15:14:46,109:INFO: 2024-04-26 15:14:42 epoch 39, step 1, loss: 1.598, global_step: 1483
+2024-04-26 15:17:30,005:INFO: 2024-04-26 15:14:42 epoch 39, step 39, loss: 1.956, global_step: 1521
+2024-04-26 15:17:30,005:INFO: 2024-04-26 15:14:42 epoch 39, step 39, loss: 1.956, global_step: 1521
+2024-04-26 15:17:31,522:INFO: ===========validation / test===========
+2024-04-26 15:17:31,522:INFO: ===========validation / test===========
+2024-04-26 15:17:36,644:INFO: processed 35226 tokens with 2425 phrases; found: 2283 phrases; correct: 1827.
+2024-04-26 15:17:36,644:INFO: processed 35226 tokens with 2425 phrases; found: 2283 phrases; correct: 1827.
+2024-04-26 15:17:36,644:INFO: accuracy:  96.96%; precision:  80.03%; recall:  75.34%; FB1:  77.61
+2024-04-26 15:17:36,644:INFO: accuracy:  96.96%; precision:  80.03%; recall:  75.34%; FB1:  77.61
+2024-04-26 15:17:36,645:INFO: : precision:  73.30%; recall:  69.15%; FB1:  71.16  1116
+2024-04-26 15:17:36,645:INFO: : precision:  73.30%; recall:  69.15%; FB1:  71.16  1116
+2024-04-26 15:17:36,645:INFO: : precision:  73.30%; recall:  69.15%; FB1:  71.16  1116
+2024-04-26 15:17:36,645:INFO: : precision:  73.30%; recall:  69.15%; FB1:  71.16  1116
+2024-04-26 15:17:36,645:INFO: 产品: precision:  86.46%; recall:  81.24%; FB1:  83.77  1167
+2024-04-26 15:17:36,645:INFO: 产品: precision:  86.46%; recall:  81.24%; FB1:  83.77  1167
+2024-04-26 15:17:40,522:INFO: 2024-04-26 15:17:36 epoch 40, step 1, loss: 1.984, global_step: 1522
+2024-04-26 15:17:40,522:INFO: 2024-04-26 15:17:36 epoch 40, step 1, loss: 1.984, global_step: 1522
+2024-04-26 15:20:35,815:INFO: 2024-04-26 15:17:36 epoch 40, step 39, loss: 1.153, global_step: 1560
+2024-04-26 15:20:35,815:INFO: 2024-04-26 15:17:36 epoch 40, step 39, loss: 1.153, global_step: 1560
+2024-04-26 15:20:38,261:INFO: ===========validation / test===========
+2024-04-26 15:20:38,261:INFO: ===========validation / test===========
+2024-04-26 15:20:44,842:INFO: processed 35226 tokens with 2425 phrases; found: 2260 phrases; correct: 1804.
+2024-04-26 15:20:44,842:INFO: processed 35226 tokens with 2425 phrases; found: 2260 phrases; correct: 1804.
+2024-04-26 15:20:44,843:INFO: accuracy:  96.87%; precision:  79.82%; recall:  74.39%; FB1:  77.01
+2024-04-26 15:20:44,843:INFO: accuracy:  96.87%; precision:  79.82%; recall:  74.39%; FB1:  77.01
+2024-04-26 15:20:44,843:INFO: : precision:  73.46%; recall:  68.55%; FB1:  70.92  1104
+2024-04-26 15:20:44,843:INFO: : precision:  73.46%; recall:  68.55%; FB1:  70.92  1104
+2024-04-26 15:20:44,843:INFO: : precision:  73.46%; recall:  68.55%; FB1:  70.92  1104
+2024-04-26 15:20:44,843:INFO: : precision:  73.46%; recall:  68.55%; FB1:  70.92  1104
+2024-04-26 15:20:44,843:INFO: 产品: precision:  85.90%; recall:  79.95%; FB1:  82.82  1156
+2024-04-26 15:20:44,843:INFO: 产品: precision:  85.90%; recall:  79.95%; FB1:  82.82  1156
+2024-04-26 15:20:48,977:INFO: 2024-04-26 15:20:44 epoch 41, step 1, loss: 1.452, global_step: 1561
+2024-04-26 15:20:48,977:INFO: 2024-04-26 15:20:44 epoch 41, step 1, loss: 1.452, global_step: 1561
+2024-04-26 15:23:29,839:INFO: 2024-04-26 15:20:44 epoch 41, step 39, loss: 1.678, global_step: 1599
+2024-04-26 15:23:29,839:INFO: 2024-04-26 15:20:44 epoch 41, step 39, loss: 1.678, global_step: 1599
+2024-04-26 15:23:35,280:INFO: ===========validation / test===========
+2024-04-26 15:23:35,280:INFO: ===========validation / test===========
+2024-04-26 15:23:39,963:INFO: processed 35226 tokens with 2425 phrases; found: 2264 phrases; correct: 1767.
+2024-04-26 15:23:39,963:INFO: processed 35226 tokens with 2425 phrases; found: 2264 phrases; correct: 1767.
+2024-04-26 15:23:39,963:INFO: accuracy:  96.59%; precision:  78.05%; recall:  72.87%; FB1:  75.37
+2024-04-26 15:23:39,963:INFO: accuracy:  96.59%; precision:  78.05%; recall:  72.87%; FB1:  75.37
+2024-04-26 15:23:39,964:INFO: : precision:  70.67%; recall:  66.19%; FB1:  68.35  1108
+2024-04-26 15:23:39,964:INFO: : precision:  70.67%; recall:  66.19%; FB1:  68.35  1108
+2024-04-26 15:23:39,964:INFO: : precision:  70.67%; recall:  66.19%; FB1:  68.35  1108
+2024-04-26 15:23:39,964:INFO: : precision:  70.67%; recall:  66.19%; FB1:  68.35  1108
+2024-04-26 15:23:39,964:INFO: 产品: precision:  85.12%; recall:  79.23%; FB1:  82.07  1156
+2024-04-26 15:23:39,964:INFO: 产品: precision:  85.12%; recall:  79.23%; FB1:  82.07  1156
+2024-04-26 15:23:44,681:INFO: 2024-04-26 15:23:39 epoch 42, step 1, loss: 1.074, global_step: 1600
+2024-04-26 15:23:44,681:INFO: 2024-04-26 15:23:39 epoch 42, step 1, loss: 1.074, global_step: 1600
+2024-04-26 15:26:32,950:INFO: 2024-04-26 15:23:39 epoch 42, step 39, loss: 1.643, global_step: 1638
+2024-04-26 15:26:32,950:INFO: 2024-04-26 15:23:39 epoch 42, step 39, loss: 1.643, global_step: 1638
+2024-04-26 15:26:34,284:INFO: ===========validation / test===========
+2024-04-26 15:26:34,284:INFO: ===========validation / test===========
+2024-04-26 15:26:39,248:INFO: processed 35226 tokens with 2425 phrases; found: 2210 phrases; correct: 1670.
+2024-04-26 15:26:39,248:INFO: processed 35226 tokens with 2425 phrases; found: 2210 phrases; correct: 1670.
+2024-04-26 15:26:39,248:INFO: accuracy:  96.11%; precision:  75.57%; recall:  68.87%; FB1:  72.06
+2024-04-26 15:26:39,248:INFO: accuracy:  96.11%; precision:  75.57%; recall:  68.87%; FB1:  72.06
+2024-04-26 15:26:39,248:INFO: : precision:  66.76%; recall:  60.95%; FB1:  63.72  1080
+2024-04-26 15:26:39,248:INFO: : precision:  66.76%; recall:  60.95%; FB1:  63.72  1080
+2024-04-26 15:26:39,248:INFO: : precision:  66.76%; recall:  60.95%; FB1:  63.72  1080
+2024-04-26 15:26:39,248:INFO: : precision:  66.76%; recall:  60.95%; FB1:  63.72  1080
+2024-04-26 15:26:39,248:INFO: 产品: precision:  83.98%; recall:  76.41%; FB1:  80.02  1130
+2024-04-26 15:26:39,248:INFO: 产品: precision:  83.98%; recall:  76.41%; FB1:  80.02  1130
+2024-04-26 15:26:42,714:INFO: 2024-04-26 15:26:39 epoch 43, step 1, loss: 2.219, global_step: 1639
+2024-04-26 15:26:42,714:INFO: 2024-04-26 15:26:39 epoch 43, step 1, loss: 2.219, global_step: 1639
+2024-04-26 15:29:20,738:INFO: 2024-04-26 15:26:39 epoch 43, step 39, loss: 2.203, global_step: 1677
+2024-04-26 15:29:20,738:INFO: 2024-04-26 15:26:39 epoch 43, step 39, loss: 2.203, global_step: 1677
+2024-04-26 15:29:22,154:INFO: ===========validation / test===========
+2024-04-26 15:29:22,154:INFO: ===========validation / test===========
+2024-04-26 15:29:26,977:INFO: processed 35226 tokens with 2425 phrases; found: 1915 phrases; correct: 1481.
+2024-04-26 15:29:26,977:INFO: processed 35226 tokens with 2425 phrases; found: 1915 phrases; correct: 1481.
+2024-04-26 15:29:26,978:INFO: accuracy:  95.65%; precision:  77.34%; recall:  61.07%; FB1:  68.25
+2024-04-26 15:29:26,978:INFO: accuracy:  95.65%; precision:  77.34%; recall:  61.07%; FB1:  68.25
+2024-04-26 15:29:26,978:INFO: : precision:  66.13%; recall:  51.99%; FB1:  58.21  930
+2024-04-26 15:29:26,978:INFO: : precision:  66.13%; recall:  51.99%; FB1:  58.21  930
+2024-04-26 15:29:26,978:INFO: : precision:  66.13%; recall:  51.99%; FB1:  58.21  930
+2024-04-26 15:29:26,978:INFO: : precision:  66.13%; recall:  51.99%; FB1:  58.21  930
+2024-04-26 15:29:26,978:INFO: 产品: precision:  87.92%; recall:  69.73%; FB1:  77.77  985
+2024-04-26 15:29:26,978:INFO: 产品: precision:  87.92%; recall:  69.73%; FB1:  77.77  985
+2024-04-26 15:29:31,817:INFO: 2024-04-26 15:29:26 epoch 44, step 1, loss: 1.592, global_step: 1678
+2024-04-26 15:29:31,817:INFO: 2024-04-26 15:29:26 epoch 44, step 1, loss: 1.592, global_step: 1678
+2024-04-26 15:32:14,626:INFO: 2024-04-26 15:29:26 epoch 44, step 39, loss: 2.173, global_step: 1716
+2024-04-26 15:32:14,626:INFO: 2024-04-26 15:29:26 epoch 44, step 39, loss: 2.173, global_step: 1716
+2024-04-26 15:32:15,885:INFO: ===========validation / test===========
+2024-04-26 15:32:15,885:INFO: ===========validation / test===========
+2024-04-26 15:32:20,614:INFO: processed 35226 tokens with 2425 phrases; found: 2312 phrases; correct: 1761.
+2024-04-26 15:32:20,614:INFO: processed 35226 tokens with 2425 phrases; found: 2312 phrases; correct: 1761.
+2024-04-26 15:32:20,614:INFO: accuracy:  96.47%; precision:  76.17%; recall:  72.62%; FB1:  74.35
+2024-04-26 15:32:20,614:INFO: accuracy:  96.47%; precision:  76.17%; recall:  72.62%; FB1:  74.35
+2024-04-26 15:32:20,614:INFO: : precision:  68.44%; recall:  65.26%; FB1:  66.81  1128
+2024-04-26 15:32:20,614:INFO: : precision:  68.44%; recall:  65.26%; FB1:  66.81  1128
+2024-04-26 15:32:20,615:INFO: : precision:  68.44%; recall:  65.26%; FB1:  66.81  1128
+2024-04-26 15:32:20,615:INFO: : precision:  68.44%; recall:  65.26%; FB1:  66.81  1128
+2024-04-26 15:32:20,615:INFO: 产品: precision:  83.53%; recall:  79.63%; FB1:  81.53  1184
+2024-04-26 15:32:20,615:INFO: 产品: precision:  83.53%; recall:  79.63%; FB1:  81.53  1184
+2024-04-26 15:32:24,460:INFO: 2024-04-26 15:32:20 epoch 45, step 1, loss: 1.557, global_step: 1717
+2024-04-26 15:32:24,460:INFO: 2024-04-26 15:32:20 epoch 45, step 1, loss: 1.557, global_step: 1717
+2024-04-26 15:35:22,658:INFO: 2024-04-26 15:32:20 epoch 45, step 39, loss: 1.73, global_step: 1755
+2024-04-26 15:35:22,658:INFO: 2024-04-26 15:32:20 epoch 45, step 39, loss: 1.73, global_step: 1755
+2024-04-26 15:35:24,086:INFO: ===========validation / test===========
+2024-04-26 15:35:24,086:INFO: ===========validation / test===========
+2024-04-26 15:35:28,942:INFO: processed 35226 tokens with 2425 phrases; found: 2174 phrases; correct: 1737.
+2024-04-26 15:35:28,942:INFO: processed 35226 tokens with 2425 phrases; found: 2174 phrases; correct: 1737.
+2024-04-26 15:35:28,942:INFO: accuracy:  96.74%; precision:  79.90%; recall:  71.63%; FB1:  75.54
+2024-04-26 15:35:28,942:INFO: accuracy:  96.74%; precision:  79.90%; recall:  71.63%; FB1:  75.54
+2024-04-26 15:35:28,942:INFO: : precision:  72.25%; recall:  64.92%; FB1:  68.39  1063
+2024-04-26 15:35:28,942:INFO: : precision:  72.25%; recall:  64.92%; FB1:  68.39  1063
+2024-04-26 15:35:28,942:INFO: : precision:  72.25%; recall:  64.92%; FB1:  68.39  1063
+2024-04-26 15:35:28,942:INFO: : precision:  72.25%; recall:  64.92%; FB1:  68.39  1063
+2024-04-26 15:35:28,942:INFO: 产品: precision:  87.22%; recall:  78.02%; FB1:  82.36  1111
+2024-04-26 15:35:28,942:INFO: 产品: precision:  87.22%; recall:  78.02%; FB1:  82.36  1111
+2024-04-26 15:35:33,305:INFO: 2024-04-26 15:35:28 epoch 46, step 1, loss: 1.8, global_step: 1756
+2024-04-26 15:35:33,305:INFO: 2024-04-26 15:35:28 epoch 46, step 1, loss: 1.8, global_step: 1756
+2024-04-26 15:38:35,046:INFO: 2024-04-26 15:35:28 epoch 46, step 39, loss: 2.143, global_step: 1794
+2024-04-26 15:38:35,046:INFO: 2024-04-26 15:35:28 epoch 46, step 39, loss: 2.143, global_step: 1794
+2024-04-26 15:38:36,344:INFO: ===========validation / test===========
+2024-04-26 15:38:36,344:INFO: ===========validation / test===========
+2024-04-26 15:38:41,261:INFO: processed 35226 tokens with 2425 phrases; found: 2416 phrases; correct: 1878.
+2024-04-26 15:38:41,261:INFO: processed 35226 tokens with 2425 phrases; found: 2416 phrases; correct: 1878.
+2024-04-26 15:38:41,261:INFO: accuracy:  96.85%; precision:  77.73%; recall:  77.44%; FB1:  77.59
+2024-04-26 15:38:41,261:INFO: accuracy:  96.85%; precision:  77.73%; recall:  77.44%; FB1:  77.59
+2024-04-26 15:38:41,262:INFO: : precision:  71.66%; recall:  71.60%; FB1:  71.63  1182
+2024-04-26 15:38:41,262:INFO: : precision:  71.66%; recall:  71.60%; FB1:  71.63  1182
+2024-04-26 15:38:41,262:INFO: : precision:  71.66%; recall:  71.60%; FB1:  71.63  1182
+2024-04-26 15:38:41,262:INFO: : precision:  71.66%; recall:  71.60%; FB1:  71.63  1182
+2024-04-26 15:38:41,262:INFO: 产品: precision:  83.55%; recall:  83.01%; FB1:  83.28  1234
+2024-04-26 15:38:41,262:INFO: 产品: precision:  83.55%; recall:  83.01%; FB1:  83.28  1234
+2024-04-26 15:38:45,358:INFO: 2024-04-26 15:38:41 epoch 47, step 1, loss: 1.628, global_step: 1795
+2024-04-26 15:38:45,358:INFO: 2024-04-26 15:38:41 epoch 47, step 1, loss: 1.628, global_step: 1795
+2024-04-26 15:41:29,046:INFO: 2024-04-26 15:38:41 epoch 47, step 39, loss: 1.036, global_step: 1833
+2024-04-26 15:41:29,046:INFO: 2024-04-26 15:38:41 epoch 47, step 39, loss: 1.036, global_step: 1833
+2024-04-26 15:41:30,235:INFO: ===========validation / test===========
+2024-04-26 15:41:30,235:INFO: ===========validation / test===========
+2024-04-26 15:41:35,039:INFO: processed 35226 tokens with 2425 phrases; found: 2520 phrases; correct: 1938.
+2024-04-26 15:41:35,039:INFO: processed 35226 tokens with 2425 phrases; found: 2520 phrases; correct: 1938.
+2024-04-26 15:41:35,039:INFO: accuracy:  96.79%; precision:  76.90%; recall:  79.92%; FB1:  78.38
+2024-04-26 15:41:35,039:INFO: accuracy:  96.79%; precision:  76.90%; recall:  79.92%; FB1:  78.38
+2024-04-26 15:41:35,040:INFO: : precision:  71.28%; recall:  74.05%; FB1:  72.64  1229
+2024-04-26 15:41:35,040:INFO: : precision:  71.28%; recall:  74.05%; FB1:  72.64  1229
+2024-04-26 15:41:35,040:INFO: : precision:  71.28%; recall:  74.05%; FB1:  72.64  1229
+2024-04-26 15:41:35,040:INFO: : precision:  71.28%; recall:  74.05%; FB1:  72.64  1229
+2024-04-26 15:41:35,040:INFO: 产品: precision:  82.26%; recall:  85.51%; FB1:  83.85  1291
+2024-04-26 15:41:35,040:INFO: 产品: precision:  82.26%; recall:  85.51%; FB1:  83.85  1291
+2024-04-26 15:41:40,119:INFO: 2024-04-26 15:41:35 epoch 48, step 1, loss: 4.199, global_step: 1834
+2024-04-26 15:41:40,119:INFO: 2024-04-26 15:41:35 epoch 48, step 1, loss: 4.199, global_step: 1834
+2024-04-26 15:44:17,577:INFO: 2024-04-26 15:41:35 epoch 48, step 39, loss: 2.747, global_step: 1872
+2024-04-26 15:44:17,577:INFO: 2024-04-26 15:41:35 epoch 48, step 39, loss: 2.747, global_step: 1872
+2024-04-26 15:44:18,981:INFO: ===========validation / test===========
+2024-04-26 15:44:18,981:INFO: ===========validation / test===========
+2024-04-26 15:44:23,745:INFO: processed 35226 tokens with 2425 phrases; found: 2196 phrases; correct: 1784.
+2024-04-26 15:44:23,745:INFO: processed 35226 tokens with 2425 phrases; found: 2196 phrases; correct: 1784.
+2024-04-26 15:44:23,745:INFO: accuracy:  96.93%; precision:  81.24%; recall:  73.57%; FB1:  77.21
+2024-04-26 15:44:23,745:INFO: accuracy:  96.93%; precision:  81.24%; recall:  73.57%; FB1:  77.21
+2024-04-26 15:44:23,745:INFO: : precision:  74.07%; recall:  67.12%; FB1:  70.42  1072
+2024-04-26 15:44:23,745:INFO: : precision:  74.07%; recall:  67.12%; FB1:  70.42  1072
+2024-04-26 15:44:23,745:INFO: : precision:  74.07%; recall:  67.12%; FB1:  70.42  1072
+2024-04-26 15:44:23,745:INFO: : precision:  74.07%; recall:  67.12%; FB1:  70.42  1072
+2024-04-26 15:44:23,745:INFO: 产品: precision:  88.08%; recall:  79.71%; FB1:  83.69  1124
+2024-04-26 15:44:23,745:INFO: 产品: precision:  88.08%; recall:  79.71%; FB1:  83.69  1124
+2024-04-26 15:44:27,302:INFO: 2024-04-26 15:44:23 epoch 49, step 1, loss: 2.088, global_step: 1873
+2024-04-26 15:44:27,302:INFO: 2024-04-26 15:44:23 epoch 49, step 1, loss: 2.088, global_step: 1873
+2024-04-26 15:47:04,510:INFO: 2024-04-26 15:44:23 epoch 49, step 39, loss: 0.97, global_step: 1911
+2024-04-26 15:47:04,510:INFO: 2024-04-26 15:44:23 epoch 49, step 39, loss: 0.97, global_step: 1911
+2024-04-26 15:47:05,792:INFO: ===========validation / test===========
+2024-04-26 15:47:05,792:INFO: ===========validation / test===========
+2024-04-26 15:47:10,471:INFO: processed 35226 tokens with 2425 phrases; found: 2317 phrases; correct: 1854.
+2024-04-26 15:47:10,471:INFO: processed 35226 tokens with 2425 phrases; found: 2317 phrases; correct: 1854.
+2024-04-26 15:47:10,471:INFO: accuracy:  96.99%; precision:  80.02%; recall:  76.45%; FB1:  78.19
+2024-04-26 15:47:10,471:INFO: accuracy:  96.99%; precision:  80.02%; recall:  76.45%; FB1:  78.19
+2024-04-26 15:47:10,471:INFO: : precision:  73.08%; recall:  69.99%; FB1:  71.50  1133
+2024-04-26 15:47:10,471:INFO: : precision:  73.08%; recall:  69.99%; FB1:  71.50  1133
+2024-04-26 15:47:10,471:INFO: : precision:  73.08%; recall:  69.99%; FB1:  71.50  1133
+2024-04-26 15:47:10,471:INFO: : precision:  73.08%; recall:  69.99%; FB1:  71.50  1133
+2024-04-26 15:47:10,471:INFO: 产品: precision:  86.66%; recall:  82.61%; FB1:  84.58  1184
+2024-04-26 15:47:10,471:INFO: 产品: precision:  86.66%; recall:  82.61%; FB1:  84.58  1184
+2024-04-26 15:47:17,938:INFO: 2024-04-26 15:47:10 epoch 50, step 1, loss: 1.544, global_step: 1912
+2024-04-26 15:47:17,938:INFO: 2024-04-26 15:47:10 epoch 50, step 1, loss: 1.544, global_step: 1912
+2024-04-26 15:50:08,388:INFO: 2024-04-26 15:47:10 epoch 50, step 39, loss: 1.441, global_step: 1950
+2024-04-26 15:50:08,388:INFO: 2024-04-26 15:47:10 epoch 50, step 39, loss: 1.441, global_step: 1950
+2024-04-26 15:50:09,637:INFO: ===========validation / test===========
+2024-04-26 15:50:09,637:INFO: ===========validation / test===========
+2024-04-26 15:50:14,365:INFO: processed 35226 tokens with 2425 phrases; found: 2309 phrases; correct: 1802.
+2024-04-26 15:50:14,365:INFO: processed 35226 tokens with 2425 phrases; found: 2309 phrases; correct: 1802.
+2024-04-26 15:50:14,366:INFO: accuracy:  96.72%; precision:  78.04%; recall:  74.31%; FB1:  76.13
+2024-04-26 15:50:14,366:INFO: accuracy:  96.72%; precision:  78.04%; recall:  74.31%; FB1:  76.13
+2024-04-26 15:50:14,366:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 15:50:14,366:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 15:50:14,366:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 15:50:14,366:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 15:50:14,366:INFO: 产品: precision:  85.00%; recall:  80.76%; FB1:  82.82  1180
+2024-04-26 15:50:14,366:INFO: 产品: precision:  85.00%; recall:  80.76%; FB1:  82.82  1180
+2024-04-26 16:32:22,784:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1714109480', dropout=0.5, embedding_dim=300, epoch=50, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-26 16:32:22,867:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 16:32:22,867:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 16:32:22,956:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 16:32:22,956:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 16:32:22,999:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 16:32:22,999:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 16:32:23,015:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 16:32:23,015:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 16:32:23,015:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 16:32:23,015:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 16:32:23,016:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 16:32:23,016:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 16:32:23,127:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 16:32:23,127:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 16:32:23,132:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 16:32:23,132:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 16:32:23,170:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9A9E4B38>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9A9E4B38>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 16:32:23,170:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9A9E4B38>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9A9E4B38>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 16:32:23,178:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 16:32:23,178:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 16:32:23,253:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9ADB3B00>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9ADB3B00>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 16:32:23,253:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9ADB3B00>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002AD9ADB3B00>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 16:32:23,280:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-26 16:32:23,280:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-26 16:32:23,429:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 16:32:23,429:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 16:32:23,431:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 16:32:23,431:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 16:32:24,154:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 16:32:24,154:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 16:32:24,213:INFO: =========== testing ===========
+2024-04-26 16:32:24,213:INFO: =========== testing ===========
+2024-04-26 16:32:24,214:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-26 16:32:24,214:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-26 16:32:24,216:INFO: Restoring parameters from .\data_path_save\1714109480\checkpoints/model-1950
+2024-04-26 16:32:24,216:INFO: Restoring parameters from .\data_path_save\1714109480\checkpoints/model-1950
+2024-04-26 16:32:29,685:INFO: processed 35226 tokens with 2425 phrases; found: 2309 phrases; correct: 1802.
+2024-04-26 16:32:29,685:INFO: processed 35226 tokens with 2425 phrases; found: 2309 phrases; correct: 1802.
+2024-04-26 16:32:29,686:INFO: accuracy:  96.72%; precision:  78.04%; recall:  74.31%; FB1:  76.13
+2024-04-26 16:32:29,686:INFO: accuracy:  96.72%; precision:  78.04%; recall:  74.31%; FB1:  76.13
+2024-04-26 16:32:29,686:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 16:32:29,686:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 16:32:29,686:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 16:32:29,686:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 16:32:29,686:INFO: 产品: precision:  85.00%; recall:  80.76%; FB1:  82.82  1180
+2024-04-26 16:32:29,686:INFO: 产品: precision:  85.00%; recall:  80.76%; FB1:  82.82  1180
+2024-04-26 19:51:22,359:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1714109480', dropout=0.5, embedding_dim=300, epoch=50, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-26 19:51:22,364:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 19:51:22,364:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 19:51:22,367:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 19:51:22,367:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 19:51:22,386:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 19:51:22,386:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 19:51:22,396:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 19:51:22,396:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 19:51:22,397:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 19:51:22,397:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 19:51:22,397:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 19:51:22,397:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 19:51:22,442:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:51:22,442:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:51:22,447:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:51:22,447:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:51:22,460:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A4E83588>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A4E83588>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:51:22,460:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A4E83588>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A4E83588>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:51:22,468:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 19:51:22,468:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 19:51:22,547:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A5253358>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A5253358>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:51:22,547:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A5253358>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000254A5253358>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:51:22,574:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-26 19:51:22,574:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-26 19:51:22,719:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 19:51:22,719:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 19:51:22,722:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 19:51:22,722:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 19:51:23,412:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 19:51:23,412:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 19:51:23,436:INFO: =========== testing ===========
+2024-04-26 19:51:23,436:INFO: =========== testing ===========
+2024-04-26 19:51:23,437:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-26 19:51:23,437:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-26 19:51:23,438:INFO: Restoring parameters from .\data_path_save\1714109480\checkpoints/model-1950
+2024-04-26 19:51:23,438:INFO: Restoring parameters from .\data_path_save\1714109480\checkpoints/model-1950
+2024-04-26 19:51:28,496:INFO: processed 35226 tokens with 2425 phrases; found: 2309 phrases; correct: 1802.
+2024-04-26 19:51:28,496:INFO: processed 35226 tokens with 2425 phrases; found: 2309 phrases; correct: 1802.
+2024-04-26 19:51:28,496:INFO: accuracy:  96.72%; precision:  78.04%; recall:  74.31%; FB1:  76.13
+2024-04-26 19:51:28,496:INFO: accuracy:  96.72%; precision:  78.04%; recall:  74.31%; FB1:  76.13
+2024-04-26 19:51:28,497:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 19:51:28,497:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 19:51:28,497:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 19:51:28,497:INFO: : precision:  70.77%; recall:  67.54%; FB1:  69.12  1129
+2024-04-26 19:51:28,497:INFO: 产品: precision:  85.00%; recall:  80.76%; FB1:  82.82  1180
+2024-04-26 19:51:28,497:INFO: 产品: precision:  85.00%; recall:  80.76%; FB1:  82.82  1180
+2024-04-26 19:52:47,385:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1714109480', dropout=0.5, embedding_dim=300, epoch=50, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-26 19:52:47,391:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:38: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 19:52:47,391:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:38: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-26 19:52:47,391:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:38: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+2024-04-26 19:52:47,391:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:38: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+2024-04-26 19:52:47,392:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:48: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 19:52:47,392:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:48: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-26 19:52:47,410:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:64: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 19:52:47,410:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:64: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-26 19:52:47,420:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:68: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 19:52:47,420:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:68: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-26 19:52:47,421:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:75: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 19:52:47,421:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:75: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-26 19:52:47,421:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 19:52:47,421:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-26 19:52:47,463:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:52:47,463:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:52:47,469:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:52:47,469:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-26 19:52:47,484:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D4BE518>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D4BE518>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:52:47,484:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D4BE518>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D4BE518>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:52:47,490:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 19:52:47,490:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-26 19:52:47,565:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D8881D0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D8881D0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:52:47,565:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D8881D0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002CA6D8881D0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-26 19:52:47,732:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:110: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 19:52:47,732:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:110: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-26 19:52:47,735:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:121: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 19:52:47,735:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:121: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-26 19:52:48,392:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:175: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 19:52:48,392:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:175: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-26 19:52:48,416:INFO: =========== testing ===========
+2024-04-26 19:52:48,416:INFO: =========== testing ===========
+2024-04-26 19:52:48,416:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-26 19:52:48,416:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-26 19:52:48,417:INFO: Restoring parameters from .\data_path_save\1714109480\checkpoints/model-1950
+2024-04-26 19:52:48,417:INFO: Restoring parameters from .\data_path_save\1714109480\checkpoints/model-1950

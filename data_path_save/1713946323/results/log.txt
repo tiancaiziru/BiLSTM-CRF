@@ -1,0 +1,1788 @@
+2024-04-24 16:12:03,353:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1521112368', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='train', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 16:12:03,353:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 16:12:03,353:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 16:12:03,357:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 16:12:03,357:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 16:12:03,373:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 16:12:03,373:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 16:12:03,382:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 16:12:03,382:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 16:12:03,383:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 16:12:03,383:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 16:12:03,383:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 16:12:03,383:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 16:12:03,426:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 16:12:03,426:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 16:12:03,431:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 16:12:03,431:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 16:12:03,446:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228685D68>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228685D68>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 16:12:03,446:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228685D68>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228685D68>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 16:12:03,456:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 16:12:03,456:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 16:12:03,535:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228A4F128>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228A4F128>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 16:12:03,535:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228A4F128>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000027228A4F128>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 16:12:03,563:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 16:12:03,563:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 16:12:03,715:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 16:12:03,715:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 16:12:03,718:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 16:12:03,718:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 16:12:04,387:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 16:12:04,387:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:157: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 16:12:04,600:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:147: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2024-04-24 16:12:04,600:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:147: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2024-04-24 16:12:04,601:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:148: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2024-04-24 16:12:04,601:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:148: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2024-04-24 16:12:10,592:INFO: 2024-04-24 16:12:06 epoch 1, step 1, loss: 65.14, global_step: 1
+2024-04-24 16:12:10,592:INFO: 2024-04-24 16:12:06 epoch 1, step 1, loss: 65.14, global_step: 1
+2024-04-24 16:14:14,340:INFO: 2024-04-24 16:12:06 epoch 1, step 39, loss: 10.17, global_step: 39
+2024-04-24 16:14:14,340:INFO: 2024-04-24 16:12:06 epoch 1, step 39, loss: 10.17, global_step: 39
+2024-04-24 16:14:15,609:INFO: ===========validation / test===========
+2024-04-24 16:14:15,609:INFO: ===========validation / test===========
+2024-04-24 16:14:19,949:INFO: Evaluating model...
+2024-04-24 16:14:19,949:INFO: Evaluating model...
+2024-04-24 16:14:19,949:INFO: Data length: 331
+2024-04-24 16:14:19,949:INFO: Data length: 331
+2024-04-24 16:14:20,023:INFO: Model predictions length: 331
+2024-04-24 16:14:20,023:INFO: Model predictions length: 331
+2024-04-24 16:14:20,023:INFO: Label path: .\data_path_save\1713946323\results\label_1
+2024-04-24 16:14:20,023:INFO: Label path: .\data_path_save\1713946323\results\label_1
+2024-04-24 16:14:20,023:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_1
+2024-04-24 16:14:20,023:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_1
+2024-04-24 16:14:22,749:INFO: 2024-04-24 16:14:20 epoch 2, step 1, loss: 11.66, global_step: 40
+2024-04-24 16:14:22,749:INFO: 2024-04-24 16:14:20 epoch 2, step 1, loss: 11.66, global_step: 40
+2024-04-24 16:16:18,911:INFO: 2024-04-24 16:14:20 epoch 2, step 39, loss: 8.732, global_step: 78
+2024-04-24 16:16:18,911:INFO: 2024-04-24 16:14:20 epoch 2, step 39, loss: 8.732, global_step: 78
+2024-04-24 16:16:20,009:INFO: ===========validation / test===========
+2024-04-24 16:16:20,009:INFO: ===========validation / test===========
+2024-04-24 16:16:24,082:INFO: Evaluating model...
+2024-04-24 16:16:24,082:INFO: Evaluating model...
+2024-04-24 16:16:24,082:INFO: Data length: 331
+2024-04-24 16:16:24,082:INFO: Data length: 331
+2024-04-24 16:16:24,156:INFO: Model predictions length: 331
+2024-04-24 16:16:24,156:INFO: Model predictions length: 331
+2024-04-24 16:16:24,156:INFO: Label path: .\data_path_save\1713946323\results\label_2
+2024-04-24 16:16:24,156:INFO: Label path: .\data_path_save\1713946323\results\label_2
+2024-04-24 16:16:24,156:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_2
+2024-04-24 16:16:24,156:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_2
+2024-04-24 16:16:31,237:INFO: 2024-04-24 16:16:24 epoch 3, step 1, loss: 7.06, global_step: 79
+2024-04-24 16:16:31,237:INFO: 2024-04-24 16:16:24 epoch 3, step 1, loss: 7.06, global_step: 79
+2024-04-24 16:18:26,785:INFO: 2024-04-24 16:16:24 epoch 3, step 39, loss: 5.734, global_step: 117
+2024-04-24 16:18:26,785:INFO: 2024-04-24 16:16:24 epoch 3, step 39, loss: 5.734, global_step: 117
+2024-04-24 16:18:27,938:INFO: ===========validation / test===========
+2024-04-24 16:18:27,938:INFO: ===========validation / test===========
+2024-04-24 16:18:31,999:INFO: Evaluating model...
+2024-04-24 16:18:31,999:INFO: Evaluating model...
+2024-04-24 16:18:31,999:INFO: Data length: 331
+2024-04-24 16:18:31,999:INFO: Data length: 331
+2024-04-24 16:18:32,075:INFO: Model predictions length: 331
+2024-04-24 16:18:32,075:INFO: Model predictions length: 331
+2024-04-24 16:18:32,075:INFO: Label path: .\data_path_save\1713946323\results\label_3
+2024-04-24 16:18:32,075:INFO: Label path: .\data_path_save\1713946323\results\label_3
+2024-04-24 16:18:32,076:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_3
+2024-04-24 16:18:32,076:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_3
+2024-04-24 16:18:36,313:INFO: 2024-04-24 16:18:32 epoch 4, step 1, loss: 7.254, global_step: 118
+2024-04-24 16:18:36,313:INFO: 2024-04-24 16:18:32 epoch 4, step 1, loss: 7.254, global_step: 118
+2024-04-24 16:20:42,938:INFO: 2024-04-24 16:18:32 epoch 4, step 39, loss: 4.771, global_step: 156
+2024-04-24 16:20:42,938:INFO: 2024-04-24 16:18:32 epoch 4, step 39, loss: 4.771, global_step: 156
+2024-04-24 16:20:44,248:INFO: ===========validation / test===========
+2024-04-24 16:20:44,248:INFO: ===========validation / test===========
+2024-04-24 16:20:48,388:INFO: Evaluating model...
+2024-04-24 16:20:48,388:INFO: Evaluating model...
+2024-04-24 16:20:48,390:INFO: Data length: 331
+2024-04-24 16:20:48,390:INFO: Data length: 331
+2024-04-24 16:20:48,399:INFO: Model predictions length: 331
+2024-04-24 16:20:48,399:INFO: Model predictions length: 331
+2024-04-24 16:20:48,399:INFO: Label path: .\data_path_save\1713946323\results\label_4
+2024-04-24 16:20:48,399:INFO: Label path: .\data_path_save\1713946323\results\label_4
+2024-04-24 16:20:48,399:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_4
+2024-04-24 16:20:48,399:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_4
+2024-04-24 16:20:50,473:INFO: 2024-04-24 16:20:48 epoch 5, step 1, loss: 5.646, global_step: 157
+2024-04-24 16:20:50,473:INFO: 2024-04-24 16:20:48 epoch 5, step 1, loss: 5.646, global_step: 157
+2024-04-24 16:23:02,907:INFO: 2024-04-24 16:20:48 epoch 5, step 39, loss: 5.574, global_step: 195
+2024-04-24 16:23:02,907:INFO: 2024-04-24 16:20:48 epoch 5, step 39, loss: 5.574, global_step: 195
+2024-04-24 16:23:05,078:INFO: ===========validation / test===========
+2024-04-24 16:23:05,078:INFO: ===========validation / test===========
+2024-04-24 16:23:10,016:INFO: Evaluating model...
+2024-04-24 16:23:10,016:INFO: Evaluating model...
+2024-04-24 16:23:10,016:INFO: Data length: 331
+2024-04-24 16:23:10,016:INFO: Data length: 331
+2024-04-24 16:23:10,047:INFO: Model predictions length: 331
+2024-04-24 16:23:10,047:INFO: Model predictions length: 331
+2024-04-24 16:23:10,047:INFO: Label path: .\data_path_save\1713946323\results\label_5
+2024-04-24 16:23:10,047:INFO: Label path: .\data_path_save\1713946323\results\label_5
+2024-04-24 16:23:10,047:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_5
+2024-04-24 16:23:10,047:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_5
+2024-04-24 16:23:13,874:INFO: 2024-04-24 16:23:10 epoch 6, step 1, loss: 4.011, global_step: 196
+2024-04-24 16:23:13,874:INFO: 2024-04-24 16:23:10 epoch 6, step 1, loss: 4.011, global_step: 196
+2024-04-24 16:25:27,361:INFO: 2024-04-24 16:23:10 epoch 6, step 39, loss: 3.239, global_step: 234
+2024-04-24 16:25:27,361:INFO: 2024-04-24 16:23:10 epoch 6, step 39, loss: 3.239, global_step: 234
+2024-04-24 16:25:27,736:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2024-04-24 16:25:27,736:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+2024-04-24 16:25:29,880:INFO: ===========validation / test===========
+2024-04-24 16:25:29,880:INFO: ===========validation / test===========
+2024-04-24 16:25:34,671:INFO: Evaluating model...
+2024-04-24 16:25:34,671:INFO: Evaluating model...
+2024-04-24 16:25:34,671:INFO: Data length: 331
+2024-04-24 16:25:34,671:INFO: Data length: 331
+2024-04-24 16:25:34,684:INFO: Model predictions length: 331
+2024-04-24 16:25:34,684:INFO: Model predictions length: 331
+2024-04-24 16:25:34,685:INFO: Label path: .\data_path_save\1713946323\results\label_6
+2024-04-24 16:25:34,685:INFO: Label path: .\data_path_save\1713946323\results\label_6
+2024-04-24 16:25:34,685:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_6
+2024-04-24 16:25:34,685:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_6
+2024-04-24 16:25:36,812:INFO: 2024-04-24 16:25:34 epoch 7, step 1, loss: 3.421, global_step: 235
+2024-04-24 16:25:36,812:INFO: 2024-04-24 16:25:34 epoch 7, step 1, loss: 3.421, global_step: 235
+2024-04-24 16:27:48,442:INFO: 2024-04-24 16:25:34 epoch 7, step 39, loss: 4.913, global_step: 273
+2024-04-24 16:27:48,442:INFO: 2024-04-24 16:25:34 epoch 7, step 39, loss: 4.913, global_step: 273
+2024-04-24 16:27:50,642:INFO: ===========validation / test===========
+2024-04-24 16:27:50,642:INFO: ===========validation / test===========
+2024-04-24 16:27:55,409:INFO: Evaluating model...
+2024-04-24 16:27:55,409:INFO: Evaluating model...
+2024-04-24 16:27:55,409:INFO: Data length: 331
+2024-04-24 16:27:55,409:INFO: Data length: 331
+2024-04-24 16:27:55,422:INFO: Model predictions length: 331
+2024-04-24 16:27:55,422:INFO: Model predictions length: 331
+2024-04-24 16:27:55,422:INFO: Label path: .\data_path_save\1713946323\results\label_7
+2024-04-24 16:27:55,422:INFO: Label path: .\data_path_save\1713946323\results\label_7
+2024-04-24 16:27:55,422:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_7
+2024-04-24 16:27:55,422:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_7
+2024-04-24 16:27:58,926:INFO: 2024-04-24 16:27:56 epoch 8, step 1, loss: 2.964, global_step: 274
+2024-04-24 16:27:58,926:INFO: 2024-04-24 16:27:56 epoch 8, step 1, loss: 2.964, global_step: 274
+2024-04-24 16:30:24,658:INFO: 2024-04-24 16:27:56 epoch 8, step 39, loss: 3.988, global_step: 312
+2024-04-24 16:30:24,658:INFO: 2024-04-24 16:27:56 epoch 8, step 39, loss: 3.988, global_step: 312
+2024-04-24 16:30:26,815:INFO: ===========validation / test===========
+2024-04-24 16:30:26,815:INFO: ===========validation / test===========
+2024-04-24 16:30:31,855:INFO: Evaluating model...
+2024-04-24 16:30:31,855:INFO: Evaluating model...
+2024-04-24 16:30:31,855:INFO: Data length: 331
+2024-04-24 16:30:31,855:INFO: Data length: 331
+2024-04-24 16:30:31,872:INFO: Model predictions length: 331
+2024-04-24 16:30:31,872:INFO: Model predictions length: 331
+2024-04-24 16:30:31,872:INFO: Label path: .\data_path_save\1713946323\results\label_8
+2024-04-24 16:30:31,872:INFO: Label path: .\data_path_save\1713946323\results\label_8
+2024-04-24 16:30:31,872:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_8
+2024-04-24 16:30:31,872:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_8
+2024-04-24 16:30:36,663:INFO: 2024-04-24 16:30:32 epoch 9, step 1, loss: 3.626, global_step: 313
+2024-04-24 16:30:36,663:INFO: 2024-04-24 16:30:32 epoch 9, step 1, loss: 3.626, global_step: 313
+2024-04-24 16:32:57,188:INFO: 2024-04-24 16:30:32 epoch 9, step 39, loss: 4.041, global_step: 351
+2024-04-24 16:32:57,188:INFO: 2024-04-24 16:30:32 epoch 9, step 39, loss: 4.041, global_step: 351
+2024-04-24 16:32:59,194:INFO: ===========validation / test===========
+2024-04-24 16:32:59,194:INFO: ===========validation / test===========
+2024-04-24 16:33:04,682:INFO: Evaluating model...
+2024-04-24 16:33:04,682:INFO: Evaluating model...
+2024-04-24 16:33:04,683:INFO: Data length: 331
+2024-04-24 16:33:04,683:INFO: Data length: 331
+2024-04-24 16:33:04,698:INFO: Model predictions length: 331
+2024-04-24 16:33:04,698:INFO: Model predictions length: 331
+2024-04-24 16:33:04,698:INFO: Label path: .\data_path_save\1713946323\results\label_9
+2024-04-24 16:33:04,698:INFO: Label path: .\data_path_save\1713946323\results\label_9
+2024-04-24 16:33:04,698:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_9
+2024-04-24 16:33:04,698:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_9
+2024-04-24 16:33:10,977:INFO: 2024-04-24 16:33:04 epoch 10, step 1, loss: 3.007, global_step: 352
+2024-04-24 16:33:10,977:INFO: 2024-04-24 16:33:04 epoch 10, step 1, loss: 3.007, global_step: 352
+2024-04-24 16:35:27,840:INFO: 2024-04-24 16:33:04 epoch 10, step 39, loss: 2.374, global_step: 390
+2024-04-24 16:35:27,840:INFO: 2024-04-24 16:33:04 epoch 10, step 39, loss: 2.374, global_step: 390
+2024-04-24 16:35:32,214:INFO: ===========validation / test===========
+2024-04-24 16:35:32,214:INFO: ===========validation / test===========
+2024-04-24 16:35:37,485:INFO: Evaluating model...
+2024-04-24 16:35:37,485:INFO: Evaluating model...
+2024-04-24 16:35:37,485:INFO: Data length: 331
+2024-04-24 16:35:37,485:INFO: Data length: 331
+2024-04-24 16:35:37,498:INFO: Model predictions length: 331
+2024-04-24 16:35:37,498:INFO: Model predictions length: 331
+2024-04-24 16:35:37,499:INFO: Label path: .\data_path_save\1713946323\results\label_10
+2024-04-24 16:35:37,499:INFO: Label path: .\data_path_save\1713946323\results\label_10
+2024-04-24 16:35:37,499:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_10
+2024-04-24 16:35:37,499:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_10
+2024-04-24 16:35:41,974:INFO: 2024-04-24 16:35:37 epoch 11, step 1, loss: 2.342, global_step: 391
+2024-04-24 16:35:41,974:INFO: 2024-04-24 16:35:37 epoch 11, step 1, loss: 2.342, global_step: 391
+2024-04-24 16:38:04,048:INFO: 2024-04-24 16:35:37 epoch 11, step 39, loss: 1.707, global_step: 429
+2024-04-24 16:38:04,048:INFO: 2024-04-24 16:35:37 epoch 11, step 39, loss: 1.707, global_step: 429
+2024-04-24 16:38:06,455:INFO: ===========validation / test===========
+2024-04-24 16:38:06,455:INFO: ===========validation / test===========
+2024-04-24 16:38:11,541:INFO: Evaluating model...
+2024-04-24 16:38:11,541:INFO: Evaluating model...
+2024-04-24 16:38:11,541:INFO: Data length: 331
+2024-04-24 16:38:11,541:INFO: Data length: 331
+2024-04-24 16:38:11,565:INFO: Model predictions length: 331
+2024-04-24 16:38:11,565:INFO: Model predictions length: 331
+2024-04-24 16:38:11,565:INFO: Label path: .\data_path_save\1713946323\results\label_11
+2024-04-24 16:38:11,565:INFO: Label path: .\data_path_save\1713946323\results\label_11
+2024-04-24 16:38:11,565:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_11
+2024-04-24 16:38:11,565:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_11
+2024-04-24 16:38:20,508:INFO: 2024-04-24 16:38:11 epoch 12, step 1, loss: 2.649, global_step: 430
+2024-04-24 16:38:20,508:INFO: 2024-04-24 16:38:11 epoch 12, step 1, loss: 2.649, global_step: 430
+2024-04-24 16:40:42,213:INFO: 2024-04-24 16:38:11 epoch 12, step 39, loss: 4.808, global_step: 468
+2024-04-24 16:40:42,213:INFO: 2024-04-24 16:38:11 epoch 12, step 39, loss: 4.808, global_step: 468
+2024-04-24 16:40:45,075:INFO: ===========validation / test===========
+2024-04-24 16:40:45,075:INFO: ===========validation / test===========
+2024-04-24 16:40:50,732:INFO: Evaluating model...
+2024-04-24 16:40:50,732:INFO: Evaluating model...
+2024-04-24 16:40:50,732:INFO: Data length: 331
+2024-04-24 16:40:50,732:INFO: Data length: 331
+2024-04-24 16:40:50,926:INFO: Model predictions length: 331
+2024-04-24 16:40:50,926:INFO: Model predictions length: 331
+2024-04-24 16:40:50,926:INFO: Label path: .\data_path_save\1713946323\results\label_12
+2024-04-24 16:40:50,926:INFO: Label path: .\data_path_save\1713946323\results\label_12
+2024-04-24 16:40:50,926:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_12
+2024-04-24 16:40:50,926:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_12
+2024-04-24 16:40:53,727:INFO: 2024-04-24 16:40:51 epoch 13, step 1, loss: 3.17, global_step: 469
+2024-04-24 16:40:53,727:INFO: 2024-04-24 16:40:51 epoch 13, step 1, loss: 3.17, global_step: 469
+2024-04-24 16:43:36,502:INFO: 2024-04-24 16:40:51 epoch 13, step 39, loss: 5.315, global_step: 507
+2024-04-24 16:43:36,502:INFO: 2024-04-24 16:40:51 epoch 13, step 39, loss: 5.315, global_step: 507
+2024-04-24 16:43:38,970:INFO: ===========validation / test===========
+2024-04-24 16:43:38,970:INFO: ===========validation / test===========
+2024-04-24 16:43:43,960:INFO: Evaluating model...
+2024-04-24 16:43:43,960:INFO: Evaluating model...
+2024-04-24 16:43:43,962:INFO: Data length: 331
+2024-04-24 16:43:43,962:INFO: Data length: 331
+2024-04-24 16:43:44,085:INFO: Model predictions length: 331
+2024-04-24 16:43:44,085:INFO: Model predictions length: 331
+2024-04-24 16:43:44,085:INFO: Label path: .\data_path_save\1713946323\results\label_13
+2024-04-24 16:43:44,085:INFO: Label path: .\data_path_save\1713946323\results\label_13
+2024-04-24 16:43:44,085:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_13
+2024-04-24 16:43:44,085:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_13
+2024-04-24 16:43:48,102:INFO: 2024-04-24 16:43:44 epoch 14, step 1, loss: 2.021, global_step: 508
+2024-04-24 16:43:48,102:INFO: 2024-04-24 16:43:44 epoch 14, step 1, loss: 2.021, global_step: 508
+2024-04-24 16:46:26,547:INFO: 2024-04-24 16:43:44 epoch 14, step 39, loss: 2.549, global_step: 546
+2024-04-24 16:46:26,547:INFO: 2024-04-24 16:43:44 epoch 14, step 39, loss: 2.549, global_step: 546
+2024-04-24 16:46:28,720:INFO: ===========validation / test===========
+2024-04-24 16:46:28,720:INFO: ===========validation / test===========
+2024-04-24 16:46:34,032:INFO: Evaluating model...
+2024-04-24 16:46:34,032:INFO: Evaluating model...
+2024-04-24 16:46:34,032:INFO: Data length: 331
+2024-04-24 16:46:34,032:INFO: Data length: 331
+2024-04-24 16:46:34,180:INFO: Model predictions length: 331
+2024-04-24 16:46:34,180:INFO: Model predictions length: 331
+2024-04-24 16:46:34,180:INFO: Label path: .\data_path_save\1713946323\results\label_14
+2024-04-24 16:46:34,180:INFO: Label path: .\data_path_save\1713946323\results\label_14
+2024-04-24 16:46:34,180:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_14
+2024-04-24 16:46:34,180:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_14
+2024-04-24 16:46:39,534:INFO: 2024-04-24 16:46:34 epoch 15, step 1, loss: 2.668, global_step: 547
+2024-04-24 16:46:39,534:INFO: 2024-04-24 16:46:34 epoch 15, step 1, loss: 2.668, global_step: 547
+2024-04-24 16:49:13,843:INFO: 2024-04-24 16:46:34 epoch 15, step 39, loss: 3.104, global_step: 585
+2024-04-24 16:49:13,843:INFO: 2024-04-24 16:46:34 epoch 15, step 39, loss: 3.104, global_step: 585
+2024-04-24 16:49:17,169:INFO: ===========validation / test===========
+2024-04-24 16:49:17,169:INFO: ===========validation / test===========
+2024-04-24 16:49:22,455:INFO: Evaluating model...
+2024-04-24 16:49:22,455:INFO: Evaluating model...
+2024-04-24 16:49:22,455:INFO: Data length: 331
+2024-04-24 16:49:22,455:INFO: Data length: 331
+2024-04-24 16:49:22,625:INFO: Model predictions length: 331
+2024-04-24 16:49:22,625:INFO: Model predictions length: 331
+2024-04-24 16:49:22,625:INFO: Label path: .\data_path_save\1713946323\results\label_15
+2024-04-24 16:49:22,625:INFO: Label path: .\data_path_save\1713946323\results\label_15
+2024-04-24 16:49:22,625:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_15
+2024-04-24 16:49:22,625:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_15
+2024-04-24 16:49:26,342:INFO: 2024-04-24 16:49:22 epoch 16, step 1, loss: 3.587, global_step: 586
+2024-04-24 16:49:26,342:INFO: 2024-04-24 16:49:22 epoch 16, step 1, loss: 3.587, global_step: 586
+2024-04-24 16:52:03,856:INFO: 2024-04-24 16:49:22 epoch 16, step 39, loss: 2.206, global_step: 624
+2024-04-24 16:52:03,856:INFO: 2024-04-24 16:49:22 epoch 16, step 39, loss: 2.206, global_step: 624
+2024-04-24 16:52:06,093:INFO: ===========validation / test===========
+2024-04-24 16:52:06,093:INFO: ===========validation / test===========
+2024-04-24 16:52:11,379:INFO: Evaluating model...
+2024-04-24 16:52:11,379:INFO: Evaluating model...
+2024-04-24 16:52:11,379:INFO: Data length: 331
+2024-04-24 16:52:11,379:INFO: Data length: 331
+2024-04-24 16:52:11,391:INFO: Model predictions length: 331
+2024-04-24 16:52:11,391:INFO: Model predictions length: 331
+2024-04-24 16:52:11,391:INFO: Label path: .\data_path_save\1713946323\results\label_16
+2024-04-24 16:52:11,391:INFO: Label path: .\data_path_save\1713946323\results\label_16
+2024-04-24 16:52:11,391:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_16
+2024-04-24 16:52:11,391:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_16
+2024-04-24 16:52:16,989:INFO: 2024-04-24 16:52:11 epoch 17, step 1, loss: 1.595, global_step: 625
+2024-04-24 16:52:16,989:INFO: 2024-04-24 16:52:11 epoch 17, step 1, loss: 1.595, global_step: 625
+2024-04-24 16:54:47,516:INFO: 2024-04-24 16:52:11 epoch 17, step 39, loss: 1.569, global_step: 663
+2024-04-24 16:54:47,516:INFO: 2024-04-24 16:52:11 epoch 17, step 39, loss: 1.569, global_step: 663
+2024-04-24 16:54:49,756:INFO: ===========validation / test===========
+2024-04-24 16:54:49,756:INFO: ===========validation / test===========
+2024-04-24 16:54:54,695:INFO: Evaluating model...
+2024-04-24 16:54:54,695:INFO: Evaluating model...
+2024-04-24 16:54:54,695:INFO: Data length: 331
+2024-04-24 16:54:54,695:INFO: Data length: 331
+2024-04-24 16:54:54,711:INFO: Model predictions length: 331
+2024-04-24 16:54:54,711:INFO: Model predictions length: 331
+2024-04-24 16:54:54,711:INFO: Label path: .\data_path_save\1713946323\results\label_17
+2024-04-24 16:54:54,711:INFO: Label path: .\data_path_save\1713946323\results\label_17
+2024-04-24 16:54:54,712:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_17
+2024-04-24 16:54:54,712:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_17
+2024-04-24 16:54:58,322:INFO: 2024-04-24 16:54:54 epoch 18, step 1, loss: 2.15, global_step: 664
+2024-04-24 16:54:58,322:INFO: 2024-04-24 16:54:54 epoch 18, step 1, loss: 2.15, global_step: 664
+2024-04-24 16:57:32,844:INFO: 2024-04-24 16:54:54 epoch 18, step 39, loss: 2.159, global_step: 702
+2024-04-24 16:57:32,844:INFO: 2024-04-24 16:54:54 epoch 18, step 39, loss: 2.159, global_step: 702
+2024-04-24 16:57:35,707:INFO: ===========validation / test===========
+2024-04-24 16:57:35,707:INFO: ===========validation / test===========
+2024-04-24 16:57:42,564:INFO: Evaluating model...
+2024-04-24 16:57:42,564:INFO: Evaluating model...
+2024-04-24 16:57:42,564:INFO: Data length: 331
+2024-04-24 16:57:42,564:INFO: Data length: 331
+2024-04-24 16:57:42,574:INFO: Model predictions length: 331
+2024-04-24 16:57:42,574:INFO: Model predictions length: 331
+2024-04-24 16:57:42,574:INFO: Label path: .\data_path_save\1713946323\results\label_18
+2024-04-24 16:57:42,574:INFO: Label path: .\data_path_save\1713946323\results\label_18
+2024-04-24 16:57:42,575:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_18
+2024-04-24 16:57:42,575:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_18
+2024-04-24 16:57:51,936:INFO: 2024-04-24 16:57:43 epoch 19, step 1, loss: 1.86, global_step: 703
+2024-04-24 16:57:51,936:INFO: 2024-04-24 16:57:43 epoch 19, step 1, loss: 1.86, global_step: 703
+2024-04-24 17:00:18,129:INFO: 2024-04-24 16:57:43 epoch 19, step 39, loss: 2.148, global_step: 741
+2024-04-24 17:00:18,129:INFO: 2024-04-24 16:57:43 epoch 19, step 39, loss: 2.148, global_step: 741
+2024-04-24 17:00:19,656:INFO: ===========validation / test===========
+2024-04-24 17:00:19,656:INFO: ===========validation / test===========
+2024-04-24 17:00:25,280:INFO: Evaluating model...
+2024-04-24 17:00:25,280:INFO: Evaluating model...
+2024-04-24 17:00:25,280:INFO: Data length: 331
+2024-04-24 17:00:25,280:INFO: Data length: 331
+2024-04-24 17:00:25,290:INFO: Model predictions length: 331
+2024-04-24 17:00:25,290:INFO: Model predictions length: 331
+2024-04-24 17:00:25,290:INFO: Label path: .\data_path_save\1713946323\results\label_19
+2024-04-24 17:00:25,290:INFO: Label path: .\data_path_save\1713946323\results\label_19
+2024-04-24 17:00:25,290:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_19
+2024-04-24 17:00:25,290:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_19
+2024-04-24 17:00:28,063:INFO: 2024-04-24 17:00:25 epoch 20, step 1, loss: 1.503, global_step: 742
+2024-04-24 17:00:28,063:INFO: 2024-04-24 17:00:25 epoch 20, step 1, loss: 1.503, global_step: 742
+2024-04-24 17:02:45,237:INFO: 2024-04-24 17:00:25 epoch 20, step 39, loss: 2.145, global_step: 780
+2024-04-24 17:02:45,237:INFO: 2024-04-24 17:00:25 epoch 20, step 39, loss: 2.145, global_step: 780
+2024-04-24 17:02:46,485:INFO: ===========validation / test===========
+2024-04-24 17:02:46,485:INFO: ===========validation / test===========
+2024-04-24 17:02:50,807:INFO: Evaluating model...
+2024-04-24 17:02:50,807:INFO: Evaluating model...
+2024-04-24 17:02:50,807:INFO: Data length: 331
+2024-04-24 17:02:50,807:INFO: Data length: 331
+2024-04-24 17:02:50,817:INFO: Model predictions length: 331
+2024-04-24 17:02:50,817:INFO: Model predictions length: 331
+2024-04-24 17:02:50,817:INFO: Label path: .\data_path_save\1713946323\results\label_20
+2024-04-24 17:02:50,817:INFO: Label path: .\data_path_save\1713946323\results\label_20
+2024-04-24 17:02:50,817:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_20
+2024-04-24 17:02:50,817:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_20
+2024-04-24 17:02:53,125:INFO: 2024-04-24 17:02:50 epoch 21, step 1, loss: 2.484, global_step: 781
+2024-04-24 17:02:53,125:INFO: 2024-04-24 17:02:50 epoch 21, step 1, loss: 2.484, global_step: 781
+2024-04-24 17:05:12,329:INFO: 2024-04-24 17:02:50 epoch 21, step 39, loss: 1.229, global_step: 819
+2024-04-24 17:05:12,329:INFO: 2024-04-24 17:02:50 epoch 21, step 39, loss: 1.229, global_step: 819
+2024-04-24 17:05:13,612:INFO: ===========validation / test===========
+2024-04-24 17:05:13,612:INFO: ===========validation / test===========
+2024-04-24 17:05:18,008:INFO: Evaluating model...
+2024-04-24 17:05:18,008:INFO: Evaluating model...
+2024-04-24 17:05:18,008:INFO: Data length: 331
+2024-04-24 17:05:18,008:INFO: Data length: 331
+2024-04-24 17:05:18,024:INFO: Model predictions length: 331
+2024-04-24 17:05:18,024:INFO: Model predictions length: 331
+2024-04-24 17:05:18,024:INFO: Label path: .\data_path_save\1713946323\results\label_21
+2024-04-24 17:05:18,024:INFO: Label path: .\data_path_save\1713946323\results\label_21
+2024-04-24 17:05:18,024:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_21
+2024-04-24 17:05:18,024:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_21
+2024-04-24 17:05:21,726:INFO: 2024-04-24 17:05:18 epoch 22, step 1, loss: 1.308, global_step: 820
+2024-04-24 17:05:21,726:INFO: 2024-04-24 17:05:18 epoch 22, step 1, loss: 1.308, global_step: 820
+2024-04-24 17:07:40,314:INFO: 2024-04-24 17:05:18 epoch 22, step 39, loss: 1.665, global_step: 858
+2024-04-24 17:07:40,314:INFO: 2024-04-24 17:05:18 epoch 22, step 39, loss: 1.665, global_step: 858
+2024-04-24 17:07:41,783:INFO: ===========validation / test===========
+2024-04-24 17:07:41,783:INFO: ===========validation / test===========
+2024-04-24 17:07:46,121:INFO: Evaluating model...
+2024-04-24 17:07:46,121:INFO: Evaluating model...
+2024-04-24 17:07:46,121:INFO: Data length: 331
+2024-04-24 17:07:46,121:INFO: Data length: 331
+2024-04-24 17:07:46,130:INFO: Model predictions length: 331
+2024-04-24 17:07:46,130:INFO: Model predictions length: 331
+2024-04-24 17:07:46,130:INFO: Label path: .\data_path_save\1713946323\results\label_22
+2024-04-24 17:07:46,130:INFO: Label path: .\data_path_save\1713946323\results\label_22
+2024-04-24 17:07:46,130:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_22
+2024-04-24 17:07:46,130:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_22
+2024-04-24 17:07:48,569:INFO: 2024-04-24 17:07:46 epoch 23, step 1, loss: 1.281, global_step: 859
+2024-04-24 17:07:48,569:INFO: 2024-04-24 17:07:46 epoch 23, step 1, loss: 1.281, global_step: 859
+2024-04-24 17:10:20,801:INFO: 2024-04-24 17:07:46 epoch 23, step 39, loss: 2.599, global_step: 897
+2024-04-24 17:10:20,801:INFO: 2024-04-24 17:07:46 epoch 23, step 39, loss: 2.599, global_step: 897
+2024-04-24 17:10:22,543:INFO: ===========validation / test===========
+2024-04-24 17:10:22,543:INFO: ===========validation / test===========
+2024-04-24 17:10:27,608:INFO: Evaluating model...
+2024-04-24 17:10:27,608:INFO: Evaluating model...
+2024-04-24 17:10:27,608:INFO: Data length: 331
+2024-04-24 17:10:27,608:INFO: Data length: 331
+2024-04-24 17:10:27,688:INFO: Model predictions length: 331
+2024-04-24 17:10:27,688:INFO: Model predictions length: 331
+2024-04-24 17:10:27,688:INFO: Label path: .\data_path_save\1713946323\results\label_23
+2024-04-24 17:10:27,688:INFO: Label path: .\data_path_save\1713946323\results\label_23
+2024-04-24 17:10:27,688:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_23
+2024-04-24 17:10:27,688:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_23
+2024-04-24 17:10:30,968:INFO: 2024-04-24 17:10:27 epoch 24, step 1, loss: 2.652, global_step: 898
+2024-04-24 17:10:30,968:INFO: 2024-04-24 17:10:27 epoch 24, step 1, loss: 2.652, global_step: 898
+2024-04-24 17:12:56,775:INFO: 2024-04-24 17:10:27 epoch 24, step 39, loss: 1.674, global_step: 936
+2024-04-24 17:12:56,775:INFO: 2024-04-24 17:10:27 epoch 24, step 39, loss: 1.674, global_step: 936
+2024-04-24 17:12:58,053:INFO: ===========validation / test===========
+2024-04-24 17:12:58,053:INFO: ===========validation / test===========
+2024-04-24 17:13:02,481:INFO: Evaluating model...
+2024-04-24 17:13:02,481:INFO: Evaluating model...
+2024-04-24 17:13:02,482:INFO: Data length: 331
+2024-04-24 17:13:02,482:INFO: Data length: 331
+2024-04-24 17:13:02,567:INFO: Model predictions length: 331
+2024-04-24 17:13:02,567:INFO: Model predictions length: 331
+2024-04-24 17:13:02,567:INFO: Label path: .\data_path_save\1713946323\results\label_24
+2024-04-24 17:13:02,567:INFO: Label path: .\data_path_save\1713946323\results\label_24
+2024-04-24 17:13:02,567:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_24
+2024-04-24 17:13:02,567:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_24
+2024-04-24 17:13:05,952:INFO: 2024-04-24 17:13:02 epoch 25, step 1, loss: 1.34, global_step: 937
+2024-04-24 17:13:05,952:INFO: 2024-04-24 17:13:02 epoch 25, step 1, loss: 1.34, global_step: 937
+2024-04-24 17:15:39,739:INFO: 2024-04-24 17:13:02 epoch 25, step 39, loss: 2.11, global_step: 975
+2024-04-24 17:15:39,739:INFO: 2024-04-24 17:13:02 epoch 25, step 39, loss: 2.11, global_step: 975
+2024-04-24 17:15:41,608:INFO: ===========validation / test===========
+2024-04-24 17:15:41,608:INFO: ===========validation / test===========
+2024-04-24 17:15:46,040:INFO: Evaluating model...
+2024-04-24 17:15:46,040:INFO: Evaluating model...
+2024-04-24 17:15:46,040:INFO: Data length: 331
+2024-04-24 17:15:46,040:INFO: Data length: 331
+2024-04-24 17:15:46,117:INFO: Model predictions length: 331
+2024-04-24 17:15:46,117:INFO: Model predictions length: 331
+2024-04-24 17:15:46,117:INFO: Label path: .\data_path_save\1713946323\results\label_25
+2024-04-24 17:15:46,117:INFO: Label path: .\data_path_save\1713946323\results\label_25
+2024-04-24 17:15:46,117:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_25
+2024-04-24 17:15:46,117:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_25
+2024-04-24 17:15:50,150:INFO: 2024-04-24 17:15:46 epoch 26, step 1, loss: 2.345, global_step: 976
+2024-04-24 17:15:50,150:INFO: 2024-04-24 17:15:46 epoch 26, step 1, loss: 2.345, global_step: 976
+2024-04-24 17:18:45,665:INFO: 2024-04-24 17:15:46 epoch 26, step 39, loss: 2.762, global_step: 1014
+2024-04-24 17:18:45,665:INFO: 2024-04-24 17:15:46 epoch 26, step 39, loss: 2.762, global_step: 1014
+2024-04-24 17:18:48,085:INFO: ===========validation / test===========
+2024-04-24 17:18:48,085:INFO: ===========validation / test===========
+2024-04-24 17:18:53,262:INFO: Evaluating model...
+2024-04-24 17:18:53,262:INFO: Evaluating model...
+2024-04-24 17:18:53,262:INFO: Data length: 331
+2024-04-24 17:18:53,262:INFO: Data length: 331
+2024-04-24 17:18:53,447:INFO: Model predictions length: 331
+2024-04-24 17:18:53,447:INFO: Model predictions length: 331
+2024-04-24 17:18:53,447:INFO: Label path: .\data_path_save\1713946323\results\label_26
+2024-04-24 17:18:53,447:INFO: Label path: .\data_path_save\1713946323\results\label_26
+2024-04-24 17:18:53,447:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_26
+2024-04-24 17:18:53,447:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_26
+2024-04-24 17:18:58,102:INFO: 2024-04-24 17:18:53 epoch 27, step 1, loss: 1.443, global_step: 1015
+2024-04-24 17:18:58,102:INFO: 2024-04-24 17:18:53 epoch 27, step 1, loss: 1.443, global_step: 1015
+2024-04-24 17:21:42,438:INFO: 2024-04-24 17:18:53 epoch 27, step 39, loss: 1.79, global_step: 1053
+2024-04-24 17:21:42,438:INFO: 2024-04-24 17:18:53 epoch 27, step 39, loss: 1.79, global_step: 1053
+2024-04-24 17:21:44,041:INFO: ===========validation / test===========
+2024-04-24 17:21:44,041:INFO: ===========validation / test===========
+2024-04-24 17:21:48,593:INFO: Evaluating model...
+2024-04-24 17:21:48,593:INFO: Evaluating model...
+2024-04-24 17:21:48,593:INFO: Data length: 331
+2024-04-24 17:21:48,593:INFO: Data length: 331
+2024-04-24 17:21:48,617:INFO: Model predictions length: 331
+2024-04-24 17:21:48,617:INFO: Model predictions length: 331
+2024-04-24 17:21:48,617:INFO: Label path: .\data_path_save\1713946323\results\label_27
+2024-04-24 17:21:48,617:INFO: Label path: .\data_path_save\1713946323\results\label_27
+2024-04-24 17:21:48,617:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_27
+2024-04-24 17:21:48,617:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_27
+2024-04-24 17:21:52,973:INFO: 2024-04-24 17:21:48 epoch 28, step 1, loss: 1.187, global_step: 1054
+2024-04-24 17:21:52,973:INFO: 2024-04-24 17:21:48 epoch 28, step 1, loss: 1.187, global_step: 1054
+2024-04-24 17:24:23,001:INFO: 2024-04-24 17:21:48 epoch 28, step 39, loss: 2.463, global_step: 1092
+2024-04-24 17:24:23,001:INFO: 2024-04-24 17:21:48 epoch 28, step 39, loss: 2.463, global_step: 1092
+2024-04-24 17:24:24,229:INFO: ===========validation / test===========
+2024-04-24 17:24:24,229:INFO: ===========validation / test===========
+2024-04-24 17:24:28,808:INFO: Evaluating model...
+2024-04-24 17:24:28,808:INFO: Evaluating model...
+2024-04-24 17:24:28,808:INFO: Data length: 331
+2024-04-24 17:24:28,808:INFO: Data length: 331
+2024-04-24 17:24:28,818:INFO: Model predictions length: 331
+2024-04-24 17:24:28,818:INFO: Model predictions length: 331
+2024-04-24 17:24:28,818:INFO: Label path: .\data_path_save\1713946323\results\label_28
+2024-04-24 17:24:28,818:INFO: Label path: .\data_path_save\1713946323\results\label_28
+2024-04-24 17:24:28,818:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_28
+2024-04-24 17:24:28,818:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_28
+2024-04-24 17:24:32,729:INFO: 2024-04-24 17:24:28 epoch 29, step 1, loss: 1.929, global_step: 1093
+2024-04-24 17:24:32,729:INFO: 2024-04-24 17:24:28 epoch 29, step 1, loss: 1.929, global_step: 1093
+2024-04-24 17:27:00,806:INFO: 2024-04-24 17:24:28 epoch 29, step 39, loss: 2.298, global_step: 1131
+2024-04-24 17:27:00,806:INFO: 2024-04-24 17:24:28 epoch 29, step 39, loss: 2.298, global_step: 1131
+2024-04-24 17:27:02,221:INFO: ===========validation / test===========
+2024-04-24 17:27:02,221:INFO: ===========validation / test===========
+2024-04-24 17:27:08,685:INFO: Evaluating model...
+2024-04-24 17:27:08,685:INFO: Evaluating model...
+2024-04-24 17:27:08,685:INFO: Data length: 331
+2024-04-24 17:27:08,685:INFO: Data length: 331
+2024-04-24 17:27:08,694:INFO: Model predictions length: 331
+2024-04-24 17:27:08,694:INFO: Model predictions length: 331
+2024-04-24 17:27:08,694:INFO: Label path: .\data_path_save\1713946323\results\label_29
+2024-04-24 17:27:08,694:INFO: Label path: .\data_path_save\1713946323\results\label_29
+2024-04-24 17:27:08,694:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_29
+2024-04-24 17:27:08,694:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_29
+2024-04-24 17:27:12,995:INFO: 2024-04-24 17:27:08 epoch 30, step 1, loss: 2.095, global_step: 1132
+2024-04-24 17:27:12,995:INFO: 2024-04-24 17:27:08 epoch 30, step 1, loss: 2.095, global_step: 1132
+2024-04-24 17:29:37,027:INFO: 2024-04-24 17:27:08 epoch 30, step 39, loss: 3.954, global_step: 1170
+2024-04-24 17:29:37,027:INFO: 2024-04-24 17:27:08 epoch 30, step 39, loss: 3.954, global_step: 1170
+2024-04-24 17:29:38,379:INFO: ===========validation / test===========
+2024-04-24 17:29:38,379:INFO: ===========validation / test===========
+2024-04-24 17:29:42,811:INFO: Evaluating model...
+2024-04-24 17:29:42,811:INFO: Evaluating model...
+2024-04-24 17:29:42,812:INFO: Data length: 331
+2024-04-24 17:29:42,812:INFO: Data length: 331
+2024-04-24 17:29:42,821:INFO: Model predictions length: 331
+2024-04-24 17:29:42,821:INFO: Model predictions length: 331
+2024-04-24 17:29:42,821:INFO: Label path: .\data_path_save\1713946323\results\label_30
+2024-04-24 17:29:42,821:INFO: Label path: .\data_path_save\1713946323\results\label_30
+2024-04-24 17:29:42,821:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_30
+2024-04-24 17:29:42,821:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_30
+2024-04-24 17:29:47,581:INFO: 2024-04-24 17:29:42 epoch 31, step 1, loss: 2.478, global_step: 1171
+2024-04-24 17:29:47,581:INFO: 2024-04-24 17:29:42 epoch 31, step 1, loss: 2.478, global_step: 1171
+2024-04-24 17:32:13,814:INFO: 2024-04-24 17:29:42 epoch 31, step 39, loss: 3.008, global_step: 1209
+2024-04-24 17:32:13,814:INFO: 2024-04-24 17:29:42 epoch 31, step 39, loss: 3.008, global_step: 1209
+2024-04-24 17:32:15,322:INFO: ===========validation / test===========
+2024-04-24 17:32:15,322:INFO: ===========validation / test===========
+2024-04-24 17:32:19,846:INFO: Evaluating model...
+2024-04-24 17:32:19,846:INFO: Evaluating model...
+2024-04-24 17:32:19,846:INFO: Data length: 331
+2024-04-24 17:32:19,846:INFO: Data length: 331
+2024-04-24 17:32:19,857:INFO: Model predictions length: 331
+2024-04-24 17:32:19,857:INFO: Model predictions length: 331
+2024-04-24 17:32:19,857:INFO: Label path: .\data_path_save\1713946323\results\label_31
+2024-04-24 17:32:19,857:INFO: Label path: .\data_path_save\1713946323\results\label_31
+2024-04-24 17:32:19,857:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_31
+2024-04-24 17:32:19,857:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_31
+2024-04-24 17:32:27,046:INFO: 2024-04-24 17:32:19 epoch 32, step 1, loss: 2.274, global_step: 1210
+2024-04-24 17:32:27,046:INFO: 2024-04-24 17:32:19 epoch 32, step 1, loss: 2.274, global_step: 1210
+2024-04-24 17:34:54,774:INFO: 2024-04-24 17:32:19 epoch 32, step 39, loss: 3.259, global_step: 1248
+2024-04-24 17:34:54,774:INFO: 2024-04-24 17:32:19 epoch 32, step 39, loss: 3.259, global_step: 1248
+2024-04-24 17:34:56,072:INFO: ===========validation / test===========
+2024-04-24 17:34:56,072:INFO: ===========validation / test===========
+2024-04-24 17:35:00,487:INFO: Evaluating model...
+2024-04-24 17:35:00,487:INFO: Evaluating model...
+2024-04-24 17:35:00,487:INFO: Data length: 331
+2024-04-24 17:35:00,487:INFO: Data length: 331
+2024-04-24 17:35:00,497:INFO: Model predictions length: 331
+2024-04-24 17:35:00,497:INFO: Model predictions length: 331
+2024-04-24 17:35:00,497:INFO: Label path: .\data_path_save\1713946323\results\label_32
+2024-04-24 17:35:00,497:INFO: Label path: .\data_path_save\1713946323\results\label_32
+2024-04-24 17:35:00,497:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_32
+2024-04-24 17:35:00,497:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_32
+2024-04-24 17:35:06,237:INFO: 2024-04-24 17:35:00 epoch 33, step 1, loss: 2.222, global_step: 1249
+2024-04-24 17:35:06,237:INFO: 2024-04-24 17:35:00 epoch 33, step 1, loss: 2.222, global_step: 1249
+2024-04-24 17:37:38,522:INFO: 2024-04-24 17:35:00 epoch 33, step 39, loss: 2.961, global_step: 1287
+2024-04-24 17:37:38,522:INFO: 2024-04-24 17:35:00 epoch 33, step 39, loss: 2.961, global_step: 1287
+2024-04-24 17:37:39,788:INFO: ===========validation / test===========
+2024-04-24 17:37:39,788:INFO: ===========validation / test===========
+2024-04-24 17:37:44,100:INFO: Evaluating model...
+2024-04-24 17:37:44,100:INFO: Evaluating model...
+2024-04-24 17:37:44,100:INFO: Data length: 331
+2024-04-24 17:37:44,100:INFO: Data length: 331
+2024-04-24 17:37:44,110:INFO: Model predictions length: 331
+2024-04-24 17:37:44,110:INFO: Model predictions length: 331
+2024-04-24 17:37:44,110:INFO: Label path: .\data_path_save\1713946323\results\label_33
+2024-04-24 17:37:44,110:INFO: Label path: .\data_path_save\1713946323\results\label_33
+2024-04-24 17:37:44,110:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_33
+2024-04-24 17:37:44,110:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_33
+2024-04-24 17:37:49,155:INFO: 2024-04-24 17:37:44 epoch 34, step 1, loss: 1.618, global_step: 1288
+2024-04-24 17:37:49,155:INFO: 2024-04-24 17:37:44 epoch 34, step 1, loss: 1.618, global_step: 1288
+2024-04-24 17:40:25,542:INFO: 2024-04-24 17:37:44 epoch 34, step 39, loss: 2.344, global_step: 1326
+2024-04-24 17:40:25,542:INFO: 2024-04-24 17:37:44 epoch 34, step 39, loss: 2.344, global_step: 1326
+2024-04-24 17:40:27,498:INFO: ===========validation / test===========
+2024-04-24 17:40:27,498:INFO: ===========validation / test===========
+2024-04-24 17:40:33,690:INFO: Evaluating model...
+2024-04-24 17:40:33,690:INFO: Evaluating model...
+2024-04-24 17:40:33,690:INFO: Data length: 331
+2024-04-24 17:40:33,690:INFO: Data length: 331
+2024-04-24 17:40:33,745:INFO: Model predictions length: 331
+2024-04-24 17:40:33,745:INFO: Model predictions length: 331
+2024-04-24 17:40:33,745:INFO: Label path: .\data_path_save\1713946323\results\label_34
+2024-04-24 17:40:33,745:INFO: Label path: .\data_path_save\1713946323\results\label_34
+2024-04-24 17:40:33,745:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_34
+2024-04-24 17:40:33,745:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_34
+2024-04-24 17:40:37,267:INFO: 2024-04-24 17:40:33 epoch 35, step 1, loss: 1.765, global_step: 1327
+2024-04-24 17:40:37,267:INFO: 2024-04-24 17:40:33 epoch 35, step 1, loss: 1.765, global_step: 1327
+2024-04-24 17:43:36,112:INFO: 2024-04-24 17:40:33 epoch 35, step 39, loss: 1.945, global_step: 1365
+2024-04-24 17:43:36,112:INFO: 2024-04-24 17:40:33 epoch 35, step 39, loss: 1.945, global_step: 1365
+2024-04-24 17:43:38,939:INFO: ===========validation / test===========
+2024-04-24 17:43:38,939:INFO: ===========validation / test===========
+2024-04-24 17:43:44,082:INFO: Evaluating model...
+2024-04-24 17:43:44,082:INFO: Evaluating model...
+2024-04-24 17:43:44,082:INFO: Data length: 331
+2024-04-24 17:43:44,082:INFO: Data length: 331
+2024-04-24 17:43:44,195:INFO: Model predictions length: 331
+2024-04-24 17:43:44,195:INFO: Model predictions length: 331
+2024-04-24 17:43:44,195:INFO: Label path: .\data_path_save\1713946323\results\label_35
+2024-04-24 17:43:44,195:INFO: Label path: .\data_path_save\1713946323\results\label_35
+2024-04-24 17:43:44,195:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_35
+2024-04-24 17:43:44,195:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_35
+2024-04-24 17:43:48,093:INFO: 2024-04-24 17:43:44 epoch 36, step 1, loss: 1.2, global_step: 1366
+2024-04-24 17:43:48,093:INFO: 2024-04-24 17:43:44 epoch 36, step 1, loss: 1.2, global_step: 1366
+2024-04-24 17:46:34,953:INFO: 2024-04-24 17:43:44 epoch 36, step 39, loss: 1.684, global_step: 1404
+2024-04-24 17:46:34,953:INFO: 2024-04-24 17:43:44 epoch 36, step 39, loss: 1.684, global_step: 1404
+2024-04-24 17:46:36,795:INFO: ===========validation / test===========
+2024-04-24 17:46:36,795:INFO: ===========validation / test===========
+2024-04-24 17:46:41,774:INFO: Evaluating model...
+2024-04-24 17:46:41,774:INFO: Evaluating model...
+2024-04-24 17:46:41,774:INFO: Data length: 331
+2024-04-24 17:46:41,774:INFO: Data length: 331
+2024-04-24 17:46:41,877:INFO: Model predictions length: 331
+2024-04-24 17:46:41,877:INFO: Model predictions length: 331
+2024-04-24 17:46:41,877:INFO: Label path: .\data_path_save\1713946323\results\label_36
+2024-04-24 17:46:41,877:INFO: Label path: .\data_path_save\1713946323\results\label_36
+2024-04-24 17:46:41,878:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_36
+2024-04-24 17:46:41,878:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_36
+2024-04-24 17:46:45,599:INFO: 2024-04-24 17:46:42 epoch 37, step 1, loss: 1.119, global_step: 1405
+2024-04-24 17:46:45,599:INFO: 2024-04-24 17:46:42 epoch 37, step 1, loss: 1.119, global_step: 1405
+2024-04-24 17:49:33,753:INFO: 2024-04-24 17:46:42 epoch 37, step 39, loss: 1.791, global_step: 1443
+2024-04-24 17:49:33,753:INFO: 2024-04-24 17:46:42 epoch 37, step 39, loss: 1.791, global_step: 1443
+2024-04-24 17:49:35,859:INFO: ===========validation / test===========
+2024-04-24 17:49:35,859:INFO: ===========validation / test===========
+2024-04-24 17:49:40,526:INFO: Evaluating model...
+2024-04-24 17:49:40,526:INFO: Evaluating model...
+2024-04-24 17:49:40,526:INFO: Data length: 331
+2024-04-24 17:49:40,526:INFO: Data length: 331
+2024-04-24 17:49:40,628:INFO: Model predictions length: 331
+2024-04-24 17:49:40,628:INFO: Model predictions length: 331
+2024-04-24 17:49:40,629:INFO: Label path: .\data_path_save\1713946323\results\label_37
+2024-04-24 17:49:40,629:INFO: Label path: .\data_path_save\1713946323\results\label_37
+2024-04-24 17:49:40,629:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_37
+2024-04-24 17:49:40,629:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_37
+2024-04-24 17:49:47,387:INFO: 2024-04-24 17:49:40 epoch 38, step 1, loss: 1.869, global_step: 1444
+2024-04-24 17:49:47,387:INFO: 2024-04-24 17:49:40 epoch 38, step 1, loss: 1.869, global_step: 1444
+2024-04-24 17:52:24,253:INFO: 2024-04-24 17:49:40 epoch 38, step 39, loss: 2.315, global_step: 1482
+2024-04-24 17:52:24,253:INFO: 2024-04-24 17:49:40 epoch 38, step 39, loss: 2.315, global_step: 1482
+2024-04-24 17:52:25,915:INFO: ===========validation / test===========
+2024-04-24 17:52:25,915:INFO: ===========validation / test===========
+2024-04-24 17:52:30,762:INFO: Evaluating model...
+2024-04-24 17:52:30,762:INFO: Evaluating model...
+2024-04-24 17:52:30,762:INFO: Data length: 331
+2024-04-24 17:52:30,762:INFO: Data length: 331
+2024-04-24 17:52:30,871:INFO: Model predictions length: 331
+2024-04-24 17:52:30,871:INFO: Model predictions length: 331
+2024-04-24 17:52:30,872:INFO: Label path: .\data_path_save\1713946323\results\label_38
+2024-04-24 17:52:30,872:INFO: Label path: .\data_path_save\1713946323\results\label_38
+2024-04-24 17:52:30,872:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_38
+2024-04-24 17:52:30,872:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_38
+2024-04-24 17:52:33,719:INFO: 2024-04-24 17:52:31 epoch 39, step 1, loss: 1.793, global_step: 1483
+2024-04-24 17:52:33,719:INFO: 2024-04-24 17:52:31 epoch 39, step 1, loss: 1.793, global_step: 1483
+2024-04-24 17:55:14,826:INFO: 2024-04-24 17:52:31 epoch 39, step 39, loss: 2.602, global_step: 1521
+2024-04-24 17:55:14,826:INFO: 2024-04-24 17:52:31 epoch 39, step 39, loss: 2.602, global_step: 1521
+2024-04-24 17:55:16,573:INFO: ===========validation / test===========
+2024-04-24 17:55:16,573:INFO: ===========validation / test===========
+2024-04-24 17:55:21,462:INFO: Evaluating model...
+2024-04-24 17:55:21,462:INFO: Evaluating model...
+2024-04-24 17:55:21,462:INFO: Data length: 331
+2024-04-24 17:55:21,462:INFO: Data length: 331
+2024-04-24 17:55:21,475:INFO: Model predictions length: 331
+2024-04-24 17:55:21,475:INFO: Model predictions length: 331
+2024-04-24 17:55:21,476:INFO: Label path: .\data_path_save\1713946323\results\label_39
+2024-04-24 17:55:21,476:INFO: Label path: .\data_path_save\1713946323\results\label_39
+2024-04-24 17:55:21,476:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_39
+2024-04-24 17:55:21,476:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_39
+2024-04-24 17:55:27,337:INFO: 2024-04-24 17:55:21 epoch 40, step 1, loss: 2.291, global_step: 1522
+2024-04-24 17:55:27,337:INFO: 2024-04-24 17:55:21 epoch 40, step 1, loss: 2.291, global_step: 1522
+2024-04-24 17:58:09,121:INFO: 2024-04-24 17:55:21 epoch 40, step 39, loss: 2.176, global_step: 1560
+2024-04-24 17:58:09,121:INFO: 2024-04-24 17:55:21 epoch 40, step 39, loss: 2.176, global_step: 1560
+2024-04-24 17:58:11,235:INFO: ===========validation / test===========
+2024-04-24 17:58:11,235:INFO: ===========validation / test===========
+2024-04-24 17:58:16,294:INFO: Evaluating model...
+2024-04-24 17:58:16,294:INFO: Evaluating model...
+2024-04-24 17:58:16,294:INFO: Data length: 331
+2024-04-24 17:58:16,294:INFO: Data length: 331
+2024-04-24 17:58:16,307:INFO: Model predictions length: 331
+2024-04-24 17:58:16,307:INFO: Model predictions length: 331
+2024-04-24 17:58:16,307:INFO: Label path: .\data_path_save\1713946323\results\label_40
+2024-04-24 17:58:16,307:INFO: Label path: .\data_path_save\1713946323\results\label_40
+2024-04-24 17:58:16,307:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_40
+2024-04-24 17:58:16,307:INFO: Metric path: .\data_path_save\1713946323\results\result_metric_40
+2024-04-24 18:34:47,800:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:34:47,865:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:34:47,865:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:34:48,047:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:34:48,047:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:34:48,080:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:34:48,080:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:34:48,097:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:34:48,097:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:34:48,097:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:34:48,097:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:34:48,097:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:34:48,097:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:34:48,207:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:34:48,207:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:34:48,212:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:34:48,212:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:34:48,285:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E5C0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E5C0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:34:48,285:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E5C0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E5C0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:34:48,294:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:34:48,294:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:34:48,375:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E208>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E208>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:34:48,375:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E208>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000276ADB9E208>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:34:48,405:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:34:48,405:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:34:48,560:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:34:48,560:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:34:48,562:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:34:48,562:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:34:49,302:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:34:49,302:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:34:49,360:INFO: =========== testing ===========
+2024-04-24 18:34:49,360:INFO: =========== testing ===========
+2024-04-24 18:34:49,360:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:34:49,360:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:34:49,361:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:34:49,361:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:37:22,764:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:37:22,768:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:37:22,768:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:37:22,772:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:37:22,772:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:37:22,789:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:37:22,789:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:37:22,798:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:37:22,798:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:37:22,799:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:37:22,799:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:37:22,799:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:37:22,799:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:37:22,845:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:37:22,845:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:37:22,850:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:37:22,850:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:37:22,864:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213084EE5F8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213084EE5F8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:37:22,864:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213084EE5F8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213084EE5F8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:37:22,871:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:37:22,871:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:37:22,952:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213076674E0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213076674E0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:37:22,952:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213076674E0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000213076674E0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:37:22,980:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:37:22,980:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:37:23,123:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:37:23,123:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:37:23,125:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:37:23,125:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:37:23,832:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:37:23,832:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:37:23,855:INFO: =========== testing ===========
+2024-04-24 18:37:23,855:INFO: =========== testing ===========
+2024-04-24 18:37:23,856:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:37:23,856:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:37:23,857:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:37:23,857:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:42:19,316:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:42:19,320:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:42:19,320:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:42:19,323:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:42:19,323:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:42:19,340:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:42:19,340:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:42:19,350:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:42:19,350:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:42:19,351:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:42:19,351:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:42:19,351:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:42:19,351:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:42:19,395:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:42:19,395:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:42:19,400:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:42:19,400:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:42:19,415:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229FBD4A630>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229FBD4A630>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:42:19,415:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229FBD4A630>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229FBD4A630>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:42:19,423:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:42:19,423:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:42:19,503:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229F8D4FDD8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229F8D4FDD8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:42:19,503:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229F8D4FDD8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000229F8D4FDD8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:42:19,532:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:42:19,532:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:42:19,685:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:42:19,685:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:42:19,687:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:42:19,687:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:42:20,376:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:42:20,376:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:42:20,399:INFO: =========== testing ===========
+2024-04-24 18:42:20,399:INFO: =========== testing ===========
+2024-04-24 18:42:20,399:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:42:20,399:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:42:20,401:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:42:20,401:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:48:52,924:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:48:52,928:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:48:52,928:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:48:52,930:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:48:52,930:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:48:52,948:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:48:52,948:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:48:52,958:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:48:52,958:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:48:52,959:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:48:52,959:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:48:52,959:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:48:52,959:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:48:53,003:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:48:53,003:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:48:53,009:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:48:53,009:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:48:53,024:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6DC44B550>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6DC44B550>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:48:53,024:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6DC44B550>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6DC44B550>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:48:53,032:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:48:53,032:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:48:53,111:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6D9105CF8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6D9105CF8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:48:53,111:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6D9105CF8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001D6D9105CF8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:48:53,138:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:48:53,138:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:48:53,297:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:48:53,297:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:48:53,299:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:48:53,299:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:48:53,995:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:48:53,995:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:48:54,020:INFO: =========== testing ===========
+2024-04-24 18:48:54,020:INFO: =========== testing ===========
+2024-04-24 18:48:54,020:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:48:54,020:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:48:54,023:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:48:54,023:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:52:20,504:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:52:20,509:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:52:20,509:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:52:20,511:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:52:20,511:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:52:20,527:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:52:20,527:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:52:20,537:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:52:20,537:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:52:20,538:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:52:20,538:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:52:20,538:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:52:20,538:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:52:20,583:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:52:20,583:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:52:20,587:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:52:20,587:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:52:20,602:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B2ECE518>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B2ECE518>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:52:20,602:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B2ECE518>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B2ECE518>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:52:20,610:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:52:20,610:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:52:20,688:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B3292208>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B3292208>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:52:20,688:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B3292208>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002A1B3292208>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:52:20,714:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:52:20,714:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:52:20,863:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:52:20,863:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:52:20,866:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:52:20,866:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:52:21,534:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:52:21,534:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:52:21,558:INFO: =========== testing ===========
+2024-04-24 18:52:21,558:INFO: =========== testing ===========
+2024-04-24 18:52:21,558:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:52:21,558:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:52:21,560:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:52:21,560:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:55:18,717:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:55:18,721:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:55:18,721:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:55:18,724:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:55:18,724:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:55:18,741:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:55:18,741:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:55:18,751:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:55:18,751:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:55:18,751:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:55:18,751:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:55:18,752:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:55:18,752:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:55:18,794:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:18,794:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:18,799:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:18,799:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:18,814:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B76FCB4E0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B76FCB4E0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:18,814:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B76FCB4E0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B76FCB4E0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:18,822:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:55:18,822:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:55:18,903:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B73C85E48>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B73C85E48>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:18,903:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B73C85E48>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000028B73C85E48>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:18,931:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:55:18,931:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:55:19,081:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:55:19,081:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:55:19,083:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:55:19,083:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:55:19,782:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:55:19,782:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:55:19,805:INFO: =========== testing ===========
+2024-04-24 18:55:19,805:INFO: =========== testing ===========
+2024-04-24 18:55:19,805:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:55:19,805:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:55:19,807:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:55:19,807:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:55:40,129:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:55:40,133:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:55:40,133:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:55:40,135:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:55:40,135:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:55:40,152:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:55:40,152:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:55:40,163:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:55:40,163:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:55:40,163:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:55:40,163:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:55:40,163:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:55:40,163:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:55:40,209:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:40,209:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:40,215:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:40,215:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:55:40,230:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E89FCB05F8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E89FCB05F8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:40,230:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E89FCB05F8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E89FCB05F8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:40,239:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:55:40,239:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:55:40,318:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E8A0072400>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E8A0072400>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:40,318:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E8A0072400>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001E8A0072400>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:55:40,346:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:55:40,346:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:55:40,500:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:55:40,500:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:55:40,502:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:55:40,502:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:55:41,199:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:55:41,199:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:55:41,220:INFO: =========== testing ===========
+2024-04-24 18:55:41,220:INFO: =========== testing ===========
+2024-04-24 18:55:41,220:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:55:41,220:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:55:41,222:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:55:41,222:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:56:34,108:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:56:34,112:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:56:34,112:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:56:34,115:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:56:34,115:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:56:34,132:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:56:34,132:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:56:34,142:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:56:34,142:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:56:34,143:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:56:34,143:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:56:34,143:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:56:34,143:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:56:34,189:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:56:34,189:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:56:34,195:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:56:34,195:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:56:34,211:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC4A8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC4A8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:56:34,211:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC4A8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC4A8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:56:34,219:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:56:34,219:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:56:34,299:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC898>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC898>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:56:34,299:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC898>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x00000240B83BC898>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:56:34,328:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:56:34,328:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:56:34,486:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:56:34,486:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:56:34,489:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:56:34,489:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:56:35,179:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:56:35,179:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:56:35,201:INFO: =========== testing ===========
+2024-04-24 18:56:35,201:INFO: =========== testing ===========
+2024-04-24 18:56:35,201:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:56:35,201:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:56:35,202:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:56:35,202:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:57:49,217:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:57:49,220:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:57:49,220:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:57:49,223:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:57:49,223:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:57:49,239:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:57:49,239:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:57:49,249:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:57:49,249:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:57:49,250:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:57:49,250:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:57:49,250:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:57:49,250:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:57:49,300:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:57:49,300:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:57:49,305:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:57:49,305:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:57:49,322:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B384FD0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B384FD0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:57:49,322:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B384FD0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B384FD0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:57:49,331:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:57:49,331:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:57:49,414:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B7523C8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B7523C8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:57:49,414:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B7523C8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000002729B7523C8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:57:49,444:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:57:49,444:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:57:49,598:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:57:49,598:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:57:49,601:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:57:49,601:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:57:50,278:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:57:50,278:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:57:50,301:INFO: =========== testing ===========
+2024-04-24 18:57:50,301:INFO: =========== testing ===========
+2024-04-24 18:57:50,302:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:57:50,302:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:57:50,303:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:57:50,303:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:58:29,237:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:58:29,241:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:58:29,241:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:58:29,244:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:58:29,244:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:58:29,260:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:58:29,260:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:58:29,271:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:58:29,271:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:58:29,271:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:58:29,271:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:58:29,272:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:58:29,272:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:58:29,318:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:58:29,318:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:58:29,323:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:58:29,323:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:58:29,338:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1BE7E5F8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1BE7E5F8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:58:29,338:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1BE7E5F8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1BE7E5F8>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:58:29,346:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:58:29,346:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:58:29,424:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1C242438>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1C242438>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:58:29,424:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1C242438>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000019C1C242438>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:58:29,452:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:58:29,452:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:58:29,604:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:58:29,604:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:58:29,607:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:58:29,607:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:58:30,276:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:58:30,276:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:58:30,300:INFO: =========== testing ===========
+2024-04-24 18:58:30,300:INFO: =========== testing ===========
+2024-04-24 18:58:30,300:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:58:30,300:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:58:30,302:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:58:30,302:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:59:04,222:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 18:59:04,228:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:59:04,228:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 18:59:04,230:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:59:04,230:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 18:59:04,246:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:59:04,246:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 18:59:04,256:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:59:04,256:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 18:59:04,256:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:59:04,256:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 18:59:04,257:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:59:04,257:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 18:59:04,301:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:59:04,301:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:59:04,306:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:59:04,306:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 18:59:04,322:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB04CD05C0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB04CD05C0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:59:04,322:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB04CD05C0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB04CD05C0>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:59:04,333:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:59:04,333:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 18:59:04,419:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB05092128>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB05092128>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:59:04,419:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB05092128>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001FB05092128>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 18:59:04,445:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:59:04,445:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 18:59:04,596:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:59:04,596:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 18:59:04,599:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:59:04,599:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 18:59:05,260:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:59:05,260:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 18:59:05,285:INFO: =========== testing ===========
+2024-04-24 18:59:05,285:INFO: =========== testing ===========
+2024-04-24 18:59:05,285:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:59:05,285:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 18:59:05,287:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 18:59:05,287:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 19:06:45,189:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=40, hidden_dim=300, lr=0.01, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 19:06:45,194:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 19:06:45,194:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 19:06:45,197:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 19:06:45,197:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 19:06:45,213:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 19:06:45,213:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 19:06:45,224:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 19:06:45,224:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 19:06:45,225:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 19:06:45,225:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 19:06:45,225:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 19:06:45,225:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 19:06:45,268:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 19:06:45,268:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 19:06:45,273:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 19:06:45,273:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 19:06:45,289:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021DFB29C208>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021DFB29C208>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 19:06:45,289:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021DFB29C208>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021DFB29C208>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 19:06:45,297:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 19:06:45,297:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 19:06:45,377:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021D81AD2400>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021D81AD2400>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 19:06:45,377:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021D81AD2400>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x0000021D81AD2400>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 19:06:45,406:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 19:06:45,406:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 19:06:45,557:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 19:06:45,557:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 19:06:45,560:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 19:06:45,560:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 19:06:46,249:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 19:06:46,249:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 19:06:46,273:INFO: =========== testing ===========
+2024-04-24 19:06:46,273:INFO: =========== testing ===========
+2024-04-24 19:06:46,273:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 19:06:46,273:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 19:06:46,275:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 19:06:46,275:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 20:36:59,458:INFO: Namespace(CRF=True, batch_size=64, clip=5.0, demo_model='1713946323', dropout=0.5, embedding_dim=300, epoch=5, hidden_dim=300, lr=0.001, mode='test', optimizer='Adam', pretrain_embedding='random', shuffle=True, test_data='data_path', train_data='data_path', update_embedding=True)
+2024-04-24 20:36:59,480:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 20:36:59,480:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:47: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2024-04-24 20:36:59,484:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 20:36:59,484:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:55: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2024-04-24 20:36:59,502:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 20:36:59,502:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:63: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-04-24 20:36:59,513:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 20:36:59,513:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:67: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+2024-04-24 20:36:59,514:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 20:36:59,514:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:74: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+2024-04-24 20:36:59,514:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 20:36:59,514:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+2024-04-24 20:36:59,564:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 20:36:59,564:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 20:36:59,578:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 20:36:59,578:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn_cell_impl.py:961: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2024-04-24 20:36:59,595:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2F7B4B70>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2F7B4B70>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 20:36:59,595:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2F7B4B70>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2F7B4B70>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 20:36:59,603:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 20:36:59,603:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\ops\rnn.py:244: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2024-04-24 20:36:59,678:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2FB83898>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2FB83898>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 20:36:59,678:WARNING: Entity <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2FB83898>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMCell.call of <tensorflow.python.ops.rnn_cell_impl.LSTMCell object at 0x000001CD2FB83898>>: AttributeError: module 'gast' has no attribute 'Index'
+2024-04-24 20:36:59,708:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 20:36:59,708:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:79: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2024-04-24 20:36:59,865:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 20:36:59,865:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:109: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2024-04-24 20:36:59,867:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 20:36:59,867:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:120: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2024-04-24 20:37:00,532:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 20:37:00,532:WARNING: From D:\zh-NER-TF-master\zh-NER-TF-master\model.py:174: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2024-04-24 20:37:00,561:INFO: =========== testing ===========
+2024-04-24 20:37:00,561:INFO: =========== testing ===========
+2024-04-24 20:37:00,561:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 20:37:00,561:WARNING: From D:\Anaconda3\lib\site-packages\tensorflow\python\training\saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+2024-04-24 20:37:00,562:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 20:37:00,562:INFO: Restoring parameters from .\data_path_save\1713946323\checkpoints/model-1560
+2024-04-24 20:37:06,960:INFO: processed 35226 tokens with 2425 phrases; found: 1992 phrases; correct: 1564.
+2024-04-24 20:37:06,960:INFO: processed 35226 tokens with 2425 phrases; found: 1992 phrases; correct: 1564.
+2024-04-24 20:37:06,960:INFO: accuracy:  96.39%; precision:  78.51%; recall:  64.49%; FB1:  70.82
+2024-04-24 20:37:06,960:INFO: accuracy:  96.39%; precision:  78.51%; recall:  64.49%; FB1:  70.82
+2024-04-24 20:37:06,960:INFO: : precision:  69.13%; recall:  57.73%; FB1:  62.92  988
+2024-04-24 20:37:06,960:INFO: : precision:  69.13%; recall:  57.73%; FB1:  62.92  988
+2024-04-24 20:37:06,960:INFO: : precision:  69.13%; recall:  57.73%; FB1:  62.92  988
+2024-04-24 20:37:06,960:INFO: : precision:  69.13%; recall:  57.73%; FB1:  62.92  988
+2024-04-24 20:37:06,960:INFO: 产品: precision:  87.75%; recall:  70.93%; FB1:  78.45  1004
+2024-04-24 20:37:06,960:INFO: 产品: precision:  87.75%; recall:  70.93%; FB1:  78.45  1004
